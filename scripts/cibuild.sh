@@ -25,4 +25,4 @@ git config user.email "edward_gibbs@yahoo.com"
 git config user.name "Ed Gibbs"
 git add --all
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
-git push --force origin master
+git push --force origin +master
