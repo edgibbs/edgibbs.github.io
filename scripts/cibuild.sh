@@ -27,4 +27,4 @@ git add --all
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
 git remote -v
 git branch
-git push --force origin developmment:master
+git push --force origin development:master
