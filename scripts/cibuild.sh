@@ -26,4 +26,5 @@ git config user.name "Ed Gibbs"
 git add --all
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
 git remote -v
-git push --force origin +origin/master
+git branch
+git push --force origin developmment:master
