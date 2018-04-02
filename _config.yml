@@ -32,6 +32,8 @@ markdown: kramdown
 theme: jekyll-theme-basically-basic
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-include-cache
 paginate: 5
 paginate_path: /page:num/
 sass:
