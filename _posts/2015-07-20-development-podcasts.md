@@ -20,7 +20,7 @@ Here&#8217;s my current podcast development list:
   Ruby Rogues is the default Ruby weekly Ruby podcast, plus they cover some non-Ruby topics here and there. It&#8217;s going on 4+ years now and still maintains a good degree of relevance.
 </div>
 
-[<img src="https://simplecast-media.s3.amazonaws.com/podcast/image/271/small_1413398739-artwork.jpg" height="200px" width="200px" />](https://robots.thoughtbot.com)
+[<img src="https://media.simplecast.com/podcast/image/271/small_1437963534-artwork.jpg" height="200px" width="200px" />](https://robots.thoughtbot.com)
 
 <div>
   This is the oldest of the Thoughtbot podcasts. It covers a host of topics including some software management.
