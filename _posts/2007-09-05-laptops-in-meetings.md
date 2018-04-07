@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/laptops_in_meetings.jpg" />
+  <img src="/images/laptops_in_meetings.jpg" />
 </div>
 
 Lesson learned a few years ago:

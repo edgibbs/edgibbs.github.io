@@ -11,5 +11,5 @@ categories:
   - software development
 ---
 <div align="center">
-  <a href="http://edgibbs.com/images/moving_taskboard.jpg"><img src="http://edgibbs.com/images/moving_taskboard_thumb.jpg" /></a>
+  <a href="/images/moving_taskboard.jpg"><img src="/images/moving_taskboard_thumb.jpg" /></a>
 </div>

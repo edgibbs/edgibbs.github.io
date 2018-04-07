@@ -12,7 +12,7 @@ categories:
   - test driven development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/badges_oscon_2009.jpg" /><br /> <!-- http://www.flickr.com/photos/fallenpegasus/3747675184/ -->
+  <img src="/images/badges_oscon_2009.jpg" /><br /> <!-- http://www.flickr.com/photos/fallenpegasus/3747675184/ -->
 </div>
 
 I took an opportunity to head down to OSCON a week or so ago on a free expo pass. I always wanted to attend OSCON up in Portland, but I never had the opportunity to go. Anyway I invited another developer along and made the morning drive down to San Jose amid unusually light traffic. Reminded me of the times I drove around during the dotcom bust. 

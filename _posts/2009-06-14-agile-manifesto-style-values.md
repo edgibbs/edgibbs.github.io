@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/c_average.jpg" /><br /> <!-- Flickr http://www.flickr.com/photos/theunabonger/420589683/sizes/m/ -->
+  <img src="/images/c_average.jpg" /><br /> <!-- Flickr http://www.flickr.com/photos/theunabonger/420589683/sizes/m/ -->
 </div>
 
 As a development manager I relished reading Martin Fowler&#8217;s [description of values](http://martinfowler.com/bliki/ComparativeValues.html) at ThoughtWorks:

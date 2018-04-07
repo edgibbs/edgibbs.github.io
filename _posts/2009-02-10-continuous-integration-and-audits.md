@@ -12,7 +12,7 @@ categories:
   - test driven development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/hudson_screen.png" />
+  <img src="/images/hudson_screen.png" />
 </div>
 
 Audits are easy to pass. You have a documented process. You have a pile of documentation that shows that you followed the process. An auditor independently validates the documentation. Much like running your suite of tests on a CI server.

@@ -12,7 +12,7 @@ categories:
   - test driven development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/friday_rule.png" />
+  <img src="/images/friday_rule.png" />
 </div>
 
 It&#8217;s 3:30 on a Friday afternoon and you just got the test passing for a nasty intermittent bug after spending most of the day on it. Now you can jump back into the main code base and add that new feature. Only, that would be a bad idea.

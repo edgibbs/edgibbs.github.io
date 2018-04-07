@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div>
-  <img src="http://edgibbs.com/images/magnifying_glass.jpg" alt="magnifying_glass" border="0" />
+  <img src="/images/magnifying_glass.jpg" alt="magnifying_glass" border="0" />
 </div>
 
 Reading through some old documentation today written up a few years ago by our Agile coach I came across a suggested rule of thumb for code reviews:

@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/rotating.jpg" /><br /> <!-- http://www.flickr.com/photos/curiouslee/2136191635/sizes/m/ -->
+  <img src="/images/rotating.jpg" /><br /> <!-- http://www.flickr.com/photos/curiouslee/2136191635/sizes/m/ -->
 </div>
 
 I recently rotated through a different management position for a weekend. It was still in IT, but I walked home late on Sunday realizing I learned a heck of a lot. 

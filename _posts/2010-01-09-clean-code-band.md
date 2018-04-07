@@ -11,7 +11,7 @@ categories:
   - test driven development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/clean_code.jpg" />
+  <img src="/images/clean_code.jpg" />
 </div>
 
 The image above probably needs a bit of explanation. After having a lingering todo I finally made a donation and requested a [Green Clean Code](http://butunclebob.com/ArticleS.UncleBob.GreenWristBand) band from Uncle Bob Martin. I was at a talk of his at SD West 2005. At that point he pointed out a rubber band he was wearing that he would snap on his wrist every once in a while to remind him to run the tests. It was a mark that he took TDD as part of his professional duties. 

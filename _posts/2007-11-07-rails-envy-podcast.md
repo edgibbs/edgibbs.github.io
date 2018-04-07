@@ -12,7 +12,7 @@ categories:
   - software development
 ---
 <div>
-  <img src="http://edgibbs.com/images/rails-envy-logo.gif" alt="rails_envy_logo.gif" border="0" width="250" height="158" />
+  <img src="/images/rails-envy-logo.gif" alt="rails_envy_logo.gif" border="0" width="250" height="158" />
 </div>
 
 > It&#8217;s like Java Posse for Rails Developers only shorter, funnier, and tightly scripted. 

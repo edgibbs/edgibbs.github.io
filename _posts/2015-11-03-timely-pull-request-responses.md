@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div>
-  <img src="http://edgibbs.com/images/jenkins_chuck_norris.jpg" />
+  <img src="/images/jenkins_chuck_norris.jpg" />
 </div>
 
 I contributed some pull requests this year to several projects including the classic [Jenkins Chuck Norris Plugin](https://wiki.jenkins-ci.org/display/JENKINS/ChuckNorris+Plugin). Some of them were accepted quickly, others had a bit of back and forth and a few sat for months. My [pull request](https://github.com/jenkinsci/chucknorris-plugin/pull/6) for the Chuck Norris Plugin attempted to fix an issue where the large Chuck images no longer showed up because Jenkins had changed its&#8217; layout design. It took diving back into some Java and brushing up on Jelly templates to figure out what was going on with the bug. After some testing I submitted a pull request and hoped to be able to integrate the fix soon after.

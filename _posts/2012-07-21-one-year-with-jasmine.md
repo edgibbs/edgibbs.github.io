@@ -14,7 +14,7 @@ categories:
   - test driven development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/jasmine_dessert.jpg" />
+  <img src="/images/jasmine_dessert.jpg" />
 </div>
 
 It&#8217;s been about one year since we introduced [Jasmine](https://github.com/pivotal/jasmine/) as our default for Javascript testing. Looking back it&#8217;s easy to declare it a success:

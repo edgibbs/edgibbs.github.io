@@ -12,7 +12,7 @@ categories:
   - test driven development
 ---
 <div>
-  <a href="http://www.thelucid.com/articles/2007/07/30/autotest-growl-fail-pass-smilies"><br /> <img src="http://edgibbs.com/images/pass.png" alt="pass.png" border="0" width="154" height="154" /><img src="http://edgibbs.com/images/pending.png" alt="pending.png" border="0" width="154" height="154" /><img src="http://edgibbs.com/images/fail.png" alt="fail.png" border="0" width="154" height="154" /><br /> </a>
+  <a href="http://www.thelucid.com/articles/2007/07/30/autotest-growl-fail-pass-smilies"><br /> <img src="/images/pass.png" alt="pass.png" border="0" width="154" height="154" /><img src="/images/pending.png" alt="pending.png" border="0" width="154" height="154" /><img src="/images/fail.png" alt="fail.png" border="0" width="154" height="154" /><br /> </a>
 </div>
 
 I haven&#8217;t really spent a lot of time with [RSpec](http://rspec.info/) since about the [0.5 release](http://edgibbs.com/2006/03/14/behavior-driven-development/). I took a tutorial class with [Dave Astels](http://www.daveastels.com/) and got jazzed about the opportunity since they were really able to leverage Ruby to make a nice BDD framework. After using RSpec all JUnit test methods started including **should**. The Rails integration back then was a bit flakey and I just dropped back to Test::Unit. 

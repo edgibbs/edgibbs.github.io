@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/empty_stadium.jpg" />
+  <img src="/images/empty_stadium.jpg" />
 </div>
 
 More than a year ago we lost a good engineer to a new opportunity. I knew that engineer would be hard to replace, but I did not expect to still be trying to hire a replacement a year later. I haven&#8217;t seen this sort of tight market for developers since the height of the dotcom boom more than 15 years ago.

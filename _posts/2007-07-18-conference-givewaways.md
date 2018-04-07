@@ -10,6 +10,6 @@ categories:
   - conferences
   - software development
 ---
-![](http://edgibbs.com/images/wii_conference.png)
+![](/images/wii_conference.png)
 
 Are you kidding? Perfect reason to get a training request turned down. Don&#8217;t help me out with an elaborate giveaway.

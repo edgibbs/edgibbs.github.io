@@ -12,7 +12,7 @@ categories:
   - test driven development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/traffic_tree.jpg" /><br /> <!--  http://www.flickr.com/photos/squirmelia/2451382877/  -->
+  <img src="/images/traffic_tree.jpg" /><br /> <!--  http://www.flickr.com/photos/squirmelia/2451382877/  -->
 </div>
 
 Unit testing is a practice that takes years to sink in. For many the first experience with the green/red bar is interesting, but not life altering. Maybe it was just a quick demo. They go back to the normal debugging patterns in the IDE or with printing output to the terminal. They try testing for a bit and find battling with legacy code just doesn&#8217;t feel like its worth the effort.

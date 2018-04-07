@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/layoff_chairs.jpg" /><br /> <!-- http://www.flickr.com/photos/goincase/2629764552/ -->
+  <img src="/images/layoff_chairs.jpg" /><br /> <!-- http://www.flickr.com/photos/goincase/2629764552/ -->
 </div>
 
 I&#8217;m now part of 11.5% of all California workers looking for work. My organization decided strategically that they didn&#8217;t want to do in-house development, hence they didn&#8217;t need a development manager. I just wish I had gotten a longer chance to show the significant quality and cost benefits of maintaining a development team in-house.

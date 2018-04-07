@@ -13,7 +13,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/tech_tower.jpg" />
+  <img src="/images/tech_tower.jpg" />
 </div>
 
 It&#8217;s not unusual for a developer to change jobs every two or three years or even more often. Up until 2004 I had never thought of a company keeping up with you after you left or having an &#8216;Alumni&#8217; concept. The consulting outfit I left had instituted an alumni program and sent me out a tiny flash stick with the company logo on it about a year after I left. It was a small thing, but I was kind of impressed they bothered with any effort at all. In addition they sent out an email every month or so with an update on how their business was going. About 6 years later I ended up back at the same company, partially because they had maintained a good relationship with me, and realized I left not so much because of them, but more for an opportunity to manage a development teams.

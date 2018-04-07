@@ -10,7 +10,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/attic.jpg" /><br /> <!-- http://www.flickr.com/photos/oldcockatoo/4118891245/ -->
+  <img src="/images/attic.jpg" /><br /> <!-- http://www.flickr.com/photos/oldcockatoo/4118891245/ -->
 </div>
 
 Everyone has that trunk of old junk tucked away in the attic. It&#8217;s almost spring and time to think about getting organized, tossing out old junk, and having a garage sale. Apache has managed to create an online concept of a software attic. Old open source projects that have outlived there useful lives can be retired there. The concept is intuitive and useful in a world with hundreds of thousands of open source projects, many abandoned early in there life.

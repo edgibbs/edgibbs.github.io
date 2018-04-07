@@ -13,7 +13,7 @@ categories:
   - test driven development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/bear_sign.jpg" /><br /> <!-- http://www.flickr.com/photos/57402879@N00/341533554/ -->
+  <img src="/images/bear_sign.jpg" /><br /> <!-- http://www.flickr.com/photos/57402879@N00/341533554/ -->
 </div>
 
 Not too long ago a local recruiter noted at a JUG meeting:

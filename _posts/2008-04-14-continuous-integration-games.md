@@ -11,7 +11,7 @@ categories:
   - software development
   - test driven development
 ---
-![](http://edgibbs.com/images/hudson_game.png)
+![](/images/hudson_game.png)
 
 A sense of fun can help new practice adoptions. After reading a post by [Clint Shank](http://clintshank.javadevelopersjournal.com/ci_build_game.htm) on coming up with a continuous integration game Erik Ramfelt went ahead and created a [Hudson plugin](http://hudson.gotdns.com/wiki/display/HUDSON/The+Continuous+Integration+Game+plugin).
 

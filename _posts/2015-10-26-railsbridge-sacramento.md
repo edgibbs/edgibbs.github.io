@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/railsbridge_sacramento.jpg" />
+  <img src="/images/railsbridge_sacramento.jpg" />
 </div>
 
 I volunteered to help out as a TA for [RailsBridge Sacramento](https://www.bridgetroll.org/events/179) this past weekend at [Hackerlab Sacramento](http://hackerlab.org). We had 60 people show up to build some Rails in one day. Many of them were brand new to programming or Rails. My section had a lot of people with some development experience in other languages like Java, C#, C, or Scala.

@@ -10,7 +10,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/sysadmin_babysitter.jpg" alt="http://www.flickr.com/photos/drewzhrodague/5413802/" />
+  <img src="/images/sysadmin_babysitter.jpg" alt="http://www.flickr.com/photos/drewzhrodague/5413802/" />
 </div>
 
 As a developer, especially a developer who is comfortable building servers and slinging code in vi, you don&#8217;t want to hear the **no** word from the sysadmin. You want to be agile and install your own app. You want to configure the extra JNDI settings yourself. And you&#8217;re wrong.

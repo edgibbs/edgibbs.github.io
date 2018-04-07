@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/job_selector.gif" />
+  <img src="/images/job_selector.gif" />
 </div>
 
 As a new manager recruiting for the first time you&#8217;ll find HR will usually provide you with a job description template. You&#8217;ll read it, laugh at how generic it is, and then try to do a bit of modification. That&#8217;s a futile effort. (Though depending on the organization you may have to leave pretty close to the strict confines of a template, in that case you&#8217;ll be working with a few custom bullet points you can work in.)

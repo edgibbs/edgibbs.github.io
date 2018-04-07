@@ -9,7 +9,7 @@ permalink: /2005/06/16/lunch-and-learn-with-elements-of-java-style/
 categories:
   - software development
 ---
-I gave the second of two lunch and learns today on our company coding standard. About a year ago when I first came on board, I went ahead and ordered twenty copies of[_The Elements of Java Style_](http://www.ambysoft.com/elementsJavaStyle.html) <img src="http://edgibbs.com/images/elements_of_java_style_book.jpg" align="left" hspace="4" vspace="2" />and handed them out to the developers. Looking back over projects after a year it was obvious that we weren&#8217;t all on the same page with our coding conventions. I&#8217;ve seen classes named **Person_fb** and lots of really short variable names like **ln**, **p**, and **cur**. And some of the developers liked curly braces on new lines even though the style guide declared they started on the same line as the declaration of the block.
+I gave the second of two lunch and learns today on our company coding standard. About a year ago when I first came on board, I went ahead and ordered twenty copies of[_The Elements of Java Style_](http://www.ambysoft.com/elementsJavaStyle.html) <img src="/images/elements_of_java_style_book.jpg" align="left" hspace="4" vspace="2" />and handed them out to the developers. Looking back over projects after a year it was obvious that we weren&#8217;t all on the same page with our coding conventions. I&#8217;ve seen classes named **Person_fb** and lots of really short variable names like **ln**, **p**, and **cur**. And some of the developers liked curly braces on new lines even though the style guide declared they started on the same line as the declaration of the block.
 
 <pre>public void doSomething() 
 {

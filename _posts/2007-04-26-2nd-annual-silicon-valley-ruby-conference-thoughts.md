@@ -11,7 +11,7 @@ categories:
   - ruby
   - software development
 ---
-![](http://edgibbs.com/images/ruby_conference_badge.jpg)
+![](/images/ruby_conference_badge.jpg)
 
 Two days at the San Jose Tech Museum hearing about Ruby rejuvenated the old cranium. Just in time since I had spent the previous day doing about 14 hours of troubleshooting on some Enterprise software. 
 

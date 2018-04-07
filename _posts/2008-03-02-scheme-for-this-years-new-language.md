@@ -10,7 +10,7 @@ categories:
   - scheme
   - software development
 ---
-[<img src="http://edgibbs.com/images/little_schemer.jpg" border="0" />](http://www.ccs.neu.edu/home/matthias/BTLS/)
+[<img src="/images/little_schemer.jpg" border="0" />](http://www.ccs.neu.edu/home/matthias/BTLS/)
 
 After some debating I came across the much talked about book, [The Little Schemer](http://www.ccs.neu.edu/home/matthias/BTLS/), at the Borders near Union Square in San Francisco. It compelled me to make a purchase and I&#8217;ve slowly started going through the examples. I really like technical books where you don&#8217;t actually have to be on a live computer to constantly try the exercises. And the cartoon elephants make me happy.
 

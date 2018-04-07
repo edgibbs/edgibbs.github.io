@@ -10,7 +10,7 @@ categories:
   - software development
   - test driven development
 ---
-![](http://edgibbs.com/images/junit_recipes.jpg)
+![](/images/junit_recipes.jpg)
 
 Apparently [JB&#8217;s](http://www.jbrains.ca/weblog/browse) [entry](http://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/J._B._Rainsberger) on Wikipedia is up for deletion. He comments on the whole process of the debate around his deletion as:
 

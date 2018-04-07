@@ -12,7 +12,7 @@ categories:
 I figured I haven&#8217;t posted many pictures of my adventure due to a number of factors. One being I didn&#8217;t have my digital camera with me. My backup option was an iSight video camera, which takes sort of blurry stills, and some effort to get the stills out. And then I was too tired to do all the work of adding images. So here are some sights of my cell:
 
 <div align="center">
-  <img src="http://edgibbs.com/images/last_night.jpg" />
+  <img src="/images/last_night.jpg" />
 </div>
 
 <div align="center">
@@ -20,7 +20,7 @@ I figured I haven&#8217;t posted many pictures of my adventure due to a number o
 </div>
 
 <div align="center">
-  <img src="http://edgibbs.com/images/calendar.jpg" />
+  <img src="/images/calendar.jpg" />
 </div>
 
 <div align="center">
@@ -28,7 +28,7 @@ I figured I haven&#8217;t posted many pictures of my adventure due to a number o
 </div>
 
 <div align="center">
-  <img src="http://edgibbs.com/images/window.jpg" />
+  <img src="/images/window.jpg" />
 </div>
 
 <div align="center">
@@ -36,7 +36,7 @@ I figured I haven&#8217;t posted many pictures of my adventure due to a number o
 </div>
 
 <div align="center">
-  <img src="http://edgibbs.com/images/port.jpg" />
+  <img src="/images/port.jpg" />
 </div>
 
 <div align="center">
@@ -44,7 +44,7 @@ I figured I haven&#8217;t posted many pictures of my adventure due to a number o
 </div>
 
 <div align="center">
-  <img src="http://edgibbs.com/images/pump.jpg" />
+  <img src="/images/pump.jpg" />
 </div>
 
 <div align="center">

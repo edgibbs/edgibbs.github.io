@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/harvest.jpg" /><br /> <!-- http://www.flickr.com/photos/matze_ott/1841491996/ -->
+  <img src="/images/harvest.jpg" /><br /> <!-- http://www.flickr.com/photos/matze_ott/1841491996/ -->
 </div>
 
 I&#8217;ve heard about git and decentralized version control systems like Mercurial for a few years. Conceptually it sounded interesting, but not compelling. Over the years I&#8217;ve used the following version control systems:

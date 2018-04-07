@@ -10,7 +10,7 @@ categories:
   - management
   - software development
 ---
-![](http://edgibbs.com/images/one_on_one.png)
+![](/images/one_on_one.png)
 
 Turns out for me Wednesdays are a good day for one-on-ones. Until recently I had been running weekly one-on-ones with my ten or so direct reports across Wednesday and Thursday afternoons.
 

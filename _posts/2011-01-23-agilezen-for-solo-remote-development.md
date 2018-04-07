@@ -35,13 +35,13 @@ A first attempt was with [Pivotal Tracker](http://www.pivotaltracker.com/). I lo
 [AgileZen](http://agilezen.com/) was my second attempt. I remember from some old twitter and blog posts that several people had said it was a really nice lightweight tool. I realized arriving at the site they had been acquired by Rally. I&#8217;ve used Rally&#8217;s tools, but for collocated teams I didn&#8217;t really think the overhead of using Rally was worth it. It appears that AgileZen is their attempt to provide a lighter more Kanban style tool. I liked the little bonsai tree on the login and found more to like when I went in and attempted to setup my current project. I watched the short series of screen casts showing how it worked, maybe 5-10 minutes in all. After that I&#8217;ve been very productive without having to dig into any help. The central metaphor is just a digital task board:
 
 <div align="center">
-  <img src="http://edgibbs.com/images/zen_board.gif" />
+  <img src="/images/zen_board.gif" />
 </div>
 
 Agile Zen focuses on the concept of cards and a board with very lightweight workflow. You create a feature or user story and &#8216;hang the card on the wall&#8217;. You then just move the card to progress it from the backlog to started. You can do some customization, but the default workflow was perfect for me as a single developer. It also looks like it works quite well for remote teams and appears to support more options like marking cards as ready or blocked. I&#8217;ve even used the blocked status for a card once where I wanted to run a design idea by a colleague before I continued further on that particular story. And I&#8217;m a sucker for some auto-generated stats, but it has a nice page where it calculates your throughput with a pretty graph. It will take more time to see if the stats actually give me useful feedback, but did I mention they look nice:
 
 <div align="center">
-  <img src="http://edgibbs.com/images/zen_performance.gif" />
+  <img src="/images/zen_performance.gif" />
 </div>
 
 Overall the tool feels closer to a digital taskboard than anything else I&#8217;ve experimented with. I&#8217;d still use a physical task board for a collocated team, but for a team working in remote locations or a single developer I think it makes a very good electronic substitute. Now if only it had an iPad version. If you&#8217;re a solo developer feel free to try it yourself as it&#8217;s 1 project is free for a single developer.

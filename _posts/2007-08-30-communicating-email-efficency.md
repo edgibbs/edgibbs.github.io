@@ -12,7 +12,7 @@ categories:
 ---
 Always use caution with email. Even an innocent signature line communicating the fastest way to reach you can be misconstrued.
 
-[<img src="http://edgibbs.com/images/four_hour_workweek.jpg" border="0" />](http://www.fourhourworkweek.com/blog/)
+[<img src="/images/four_hour_workweek.jpg" border="0" />](http://www.fourhourworkweek.com/blog/)
 
 I read [Tim Ferris&#8217;s](http://www.fourhourworkweek.com/blog/) book a few months ago. Many different ideas on how to be more effective using less time. I tested out the idea of batching email and only checking it twice per day. Checking email at only 12:00 and 4:00 and batch processing saves at least 30 minutes per day. Successful experiment!
 

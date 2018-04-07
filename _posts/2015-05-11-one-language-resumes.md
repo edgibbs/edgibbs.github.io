@@ -13,7 +13,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/get_out_of_jail_free.jpg" />
+  <img src="/images/get_out_of_jail_free.jpg" />
 </div>
 
 Reviewing resumes as a manager, tech lead, or even just a developer is no one&#8217;s favorite activity. Resume&#8217;s are inefficient, misleading and so often **boring**. If you&#8217;re a prospective hire boring is bad.

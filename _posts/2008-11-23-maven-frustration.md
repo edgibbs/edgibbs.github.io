@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/maven_book.jpg" />
+  <img src="/images/maven_book.jpg" />
 </div>
 
 Browsing [Howard Lewis Ship&#8217;s blog](http://tapestryjava.blogspot.com/2008/11/maven-displaying-version-number-in.html) I came across a short post on his maven frustrations:

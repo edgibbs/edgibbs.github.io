@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/remote_with_bike.jpg" />
+  <img src="/images/remote_with_bike.jpg" />
 </div>
 
 As working remotely especially as a developer has become easier over time, I still see a lack of any real remote work in the Bay area. Despite a very expensive living expenses, office space, and almost zero unemployment among developers, companies rarely seem to consider remote work. I assumed as the demand for developers intensified we&#8217;d see a corresponding interest in adding remote workers to teams or even going fully remote, especially with companies like 37 Signals and others paving the way.

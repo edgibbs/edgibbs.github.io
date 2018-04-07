@@ -10,7 +10,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/domain_driven.png" />
+  <img src="/images/domain_driven.png" />
 </div>
 
 Brows furrow, fists clench, throats tighten. Our domain logic is lost in legacy systems. I look back at any significant project that interfaces with our mainframe and see lost opportunities. We could have real domain objects interacting with relevant behaviors, but instead we dutifully write dozens of data objects full of getter/setters and little else. We pass off all the business logic and processing to the mainframe. 

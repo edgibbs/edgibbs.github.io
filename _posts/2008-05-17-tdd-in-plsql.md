@@ -11,7 +11,7 @@ categories:
   - test driven development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/oracle_headquarters.jpg" />
+  <img src="/images/oracle_headquarters.jpg" />
 </div>
 
 PL/SQL has unit testing support and tooling, but my sense is that it&#8217;s far from the world of Java or Ruby. In most modern OO languages unit testing is just a part of the landscape. TDD is evolving to BDD with tools like RSpec and modern web frameworks come with unit testing support built in from Wicket to Rails.

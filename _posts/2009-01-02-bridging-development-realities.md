@@ -13,7 +13,7 @@ categories:
   - test driven development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/bridge.jpg" />
+  <img src="/images/bridge.jpg" />
 </div>
 
 Denis over at [One Brike At a Time](http://digitalbrikes.com/onebrikeatatime/2008/12/31/the-enemy-within/) recently expressed frustration at having to use low trust practices:

@@ -10,7 +10,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/library_card.gif" />
+  <img src="/images/library_card.gif" />
 </div>
 
 Your local public library lets you check out books for a few weeks at a time. Developers shouldn&#8217;t ever use this as a model, but it can happen. A developer new to a language or framework is afraid to check in. Instead they wait sometimes weeks before checking in their first code. My idea of an ideal checkout time is 15-30 minutes. A day is really an extreme edge case.

@@ -13,7 +13,7 @@ categories:
   - test driven development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/10000_tests.jpg" />
+  <img src="/images/10000_tests.jpg" />
 </div>
 
 I played a &#8220;Yeah&#8221; sound effect in campfire a few weeks ago in celebration of checking in our 10,000th test. It was a milestone worth celebrating with both Creme Br&ucirc;l&eacute;e Bread Pudding and a chocolate chip cookie. Stepping back a few years I had to fight policy battles just to allot any development time to testing or even check it into CVS with the production code.
@@ -39,5 +39,5 @@ Some not so good things:
 Even with all the cons of a really large test suite, I love that we have it and run it all day long.
 
 <div align="center">
-  <img src="http://edgibbs.com/images/bread_pudding.jpg" />
+  <img src="/images/bread_pudding.jpg" />
 </div>

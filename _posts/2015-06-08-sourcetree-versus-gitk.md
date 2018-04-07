@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/sourcetree_icon.png" />
+  <img src="/images/sourcetree_icon.png" />
 </div>
 
 Git is a command line focused tool with hundreds of options. You can even visually see a graph of commit history in the terminal using git log with &#8211;graph. The default visual git tool is gitk which makes a reasonable GUI client for digging through history or doing ad-hoc code reviews. 

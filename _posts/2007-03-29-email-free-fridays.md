@@ -26,6 +26,6 @@ The benefits of experimenting with no email one day a week are:
   * You get a bit of exercise and experience more of the company by just walking around. (Similar to the idea behind management by walking around.)
   * It&#8217;s really a sneaky way to do good old fashioned team building.
 
-![](http://edgibbs.com/images/crackberry.jpg)
+![](/images/crackberry.jpg)
   
 Hopefully we&#8217;ll see a lot more people wearing Hawaiian shirts walking around talking to people on Fridays in the future. Who can see your cool casual office attire if you bury yourself most of the day in a cubicle sending email and scrolling through your [CrackBerry](http://www.wordspy.com/words/crackberry.asp) at lunch.

@@ -10,7 +10,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/ugly_tree.jpg" />
+  <img src="/images/ugly_tree.jpg" />
 </div>
 
 My best experience with source control trees have been in shops that didn&#8217;t have them to start with. At that point you have a blank slate and you can do a reasonable job of organization. The ones where they used to have VSS and migrated into CVS and then Clearcase are generally just a mess. You have a lot of historical junk that&#8217;s poorly organized.

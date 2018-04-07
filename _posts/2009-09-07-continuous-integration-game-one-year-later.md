@@ -12,7 +12,7 @@ categories:
   - test driven development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/pinball.jpg" /><br /> <!-- http://www.flickr.com/photos/80327698@N00/3858554539/ -->
+  <img src="/images/pinball.jpg" /><br /> <!-- http://www.flickr.com/photos/80327698@N00/3858554539/ -->
 </div>
 
 [Hudson](https://hudson.dev.java.net/) has a [Continuous Integration Plugin game](http://wiki.hudson-ci.org/display/HUDSON/The+Continuous+Integration+Game+plugin) that gives you points for successful builds, adding tests, removing TODOs, etc. As a plugin it started out simple, but now allows you to get points based on:

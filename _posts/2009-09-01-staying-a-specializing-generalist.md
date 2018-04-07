@@ -12,7 +12,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/jars.jpg" />
+  <img src="/images/jars.jpg" />
 </div>
 
 Long ago Scott Ambler discussed the idea of a [specializing generalist](http://www.agilemodeling.com/essays/generalizingSpecialists.htm), an element critical for Agile teams. Stumbling across the definition of a generalist who has developed some deep skills in certain areas, but broad skills in a variety of functions felt natural. As a very old web developer I long ago spread out from my development roots. Passion and a love of learning led to a much wider spread of abilities. Just a few were:

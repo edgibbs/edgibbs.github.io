@@ -12,7 +12,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/tricycle_500.jpg" /><br /> <!-- http://www.flickr.com/photos/wvannus/2970809388/ -->
+  <img src="/images/tricycle_500.jpg" /><br /> <!-- http://www.flickr.com/photos/wvannus/2970809388/ -->
 </div>
 
 About half my career has been inside professional service firms. The work has quite a few perks and you&#8217;re constantly pushed to learn new things. Having spent quite a bit of time within IT departments as a manager I did sometimes missed the wealth of different clients and projects you&#8217;re exposed to as a consultant. 

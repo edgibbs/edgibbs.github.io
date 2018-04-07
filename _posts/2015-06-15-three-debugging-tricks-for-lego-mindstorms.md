@@ -10,7 +10,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/lego_club.jpg" />
+  <img src="/images/lego_club.jpg" />
 </div>
 
 My daughter&#8217;s FFL Lego Club is over for the year, but I wanted to two helpful debugging things I learned along the way, that were especially helpful for newer kids. 
@@ -22,7 +22,7 @@ The first fix for this was actually saving a copy off before making significant 
 A second quick win was testing with the robot connected. Our boys and girls were very set on the program, download, run to the table loop, but I eventually had a few of them persuaded to test with the robot just connected via USB. The best part of this is you can select a single block and then run just that block with the robot. We used this several times to troubleshoot issues with arms that swung back too far and got stuck on lego pieces, which halts further execution and doesn&#8217;t give much feedback on what&#8217;s wrong.
 
 <div align="center">
-  <img src="http://edgibbs.com/images/lego_one_block.png" />
+  <img src="/images/lego_one_block.png" />
 </div>
 
 Finally was the one I had the most fun with. Many kids&#8217; programs had dozens of blocks connected. Often they would forget where they added tweaks to turn left, spin, or adjust the shooting arm. As a lover of sound effects I suggested adding sound effects before and after they added their tweaks so they&#8217;d know several things:

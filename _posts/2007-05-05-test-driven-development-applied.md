@@ -14,7 +14,7 @@ categories:
 [Lasse](http://radio.javaranch.com/lasse/) is writing a Manning book on [practical TDD and acceptance testing for java developers](http://radio.javaranch.com/lasse/2007/04/27/1177660989075.html). 
 
 <div align="center">
-  <img src="http://edgibbs.com/images/test_driven_cover.jpg" border="0" />
+  <img src="/images/test_driven_cover.jpg" border="0" />
 </div>
 
 I&#8217;m so excited I purchased the early access addition, signed up for the author forums, and started skimming the PDF of the first four chapters tonight. This is exactly the text my team and so many other java development teams have needed. Up until now I had a big todo on my Someday/Maybe list entitled:

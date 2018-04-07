@@ -10,7 +10,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/scott_mccloud.gif" />
+  <img src="/images/scott_mccloud.gif" />
 </div>
 
 Flipping through the Google Chrome [documentation](http://www.google.com/googlebooks/chrome/index.html) my brain was screaming&#8211;&#8220;This has to be [Scott McCloud](http://www.scottmccloud.com/)&#8220;. Turns out it was. Scott was a big deal back in the dot com days with his book on &#8220;Understanding Comics&#8221; and it&#8217;s applicability to designing web sites. I actually saw a great talk from him back at the Web 99 conference in SF. (That would be 1999). Nice to see him crossing back into the web world again.

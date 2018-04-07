@@ -11,7 +11,7 @@ categories:
 ---
 Nurses state &#8216;fastest recovery ever&#8217;
 
-![](http://www.edgibbs.com/images/catheter_knife.gif)
+![](/images/catheter_knife.gif)
   
 More good news today. After my last catheter flush, the two senior nurses declared that I was the fastest bone marrow transplant they had ever seen and that it usually takes months to recover. Most people get to keep the port a lot longer before they&#8217;re comfortable pulling it out. So considering they do about 20-30 transplants a year there that puts me in maybe the top 1% of BMT patients. Good news is so much more fun than cancer relapses.
 

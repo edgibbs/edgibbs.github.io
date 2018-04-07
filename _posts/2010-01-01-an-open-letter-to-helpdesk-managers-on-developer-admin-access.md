@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/helpdesk.jpg" /><br /> <!-- http://www.flickr.com/photos/andypiper/4040455314/ -->
+  <img src="/images/helpdesk.jpg" /><br /> <!-- http://www.flickr.com/photos/andypiper/4040455314/ -->
 </div>
 
 I know you wonder why developers come charging into the help desk right after you&#8217;ve delivered the sparkling new machine with 8GB of RAM, dual monitors and a quad core processor. They start babbling about how they need admin access or you might as well give them there old Pentium 4 box so they can get something done. Their face is flushed with frustration and they seem very passionate about this. You try to patiently explain that they can just fill out a ticket and they&#8217;ll send someone over to update their JDK or install Visio. They just throw up there hands stomp off, and before long you&#8217;re talking to a development manager. What is the big deal really?

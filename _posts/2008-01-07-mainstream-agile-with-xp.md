@@ -13,7 +13,7 @@ categories:
   - test driven development
 ---
 <div align="center">
-  <a href="http://www.oreilly.com/catalog/9780596527358/"><img src="http://edgibbs.com/images/head_first_taskboard.png" border="0" /></a>
+  <a href="http://www.oreilly.com/catalog/9780596527358/"><img src="/images/head_first_taskboard.png" border="0" /></a>
 </div>
 
 I hadn&#8217;t realized the Head First series now has a book on [software development](http://www.oreilly.com/catalog/9780596527358/). Curious, I took a glance at the table of contents. Topics include:

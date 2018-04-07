@@ -615,7 +615,7 @@ instead.
 
 Start your MySQL server if it isn&#8217;t running. I just do this from the MySQL Preferences pane.
 
-![](http://edgibbs.com/images/mysql_preferences.png)
+![](/images/mysql_preferences.png)
 
 Time to setup the databases:
 

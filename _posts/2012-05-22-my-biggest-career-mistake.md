@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/house.jpg" /><br /> <!-- http://www.flickr.com/photos/joesixpac/508449389/ -->
+  <img src="/images/house.jpg" /><br /> <!-- http://www.flickr.com/photos/joesixpac/508449389/ -->
 </div>
 
 My software career path has been a planned affair for many years. It started out as a happy accident with some exposure to a very early internet startup and an opportunity to build out a few web sites. It only took a few months to determine I really liked doing web development and I began my love affair with the computer section of local bookstores, devouring titles in an effort to come up to speed.

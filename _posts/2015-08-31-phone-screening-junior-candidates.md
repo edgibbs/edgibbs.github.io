@@ -12,7 +12,7 @@ categories:
   - test driven development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/female_coder_laptop.jpg" /><br /> <!-- From flickr https://www.flickr.com/photos/ladypain/178384326/in/photolist-gLgrQ-6XMHAD-6p8pfd-6VTgST-4dgFUr-75CSMu-a62HT1-qwTrr-87pDRt-bNWyQ8-bX4A24-DPyBz-av5x4W-611npi-ajXbEm-h3pkN-h2n2P-a4jLmq-54qDW-hVL1YU-7osfhN-5RBvjZ-5jNWNh-8sJ3iR-h2n82-rRwSR-h2mN4-h3ppK-h2mRs-h2i85-h2n6H-h2mVT-h2mUB-h2in8-h2iiw-h2icW-h3pnN-h2nfv-h2naZ-h2nm8-5ZUCNJ-75aTrq-rj6jWe-h2mXL-6psA47-7Woq2G-2Qvf2o-kgHHPn-5jCyQc-5oXYLW -->
+  <img src="/images/female_coder_laptop.jpg" /><br /> <!-- From flickr https://www.flickr.com/photos/ladypain/178384326/in/photolist-gLgrQ-6XMHAD-6p8pfd-6VTgST-4dgFUr-75CSMu-a62HT1-qwTrr-87pDRt-bNWyQ8-bX4A24-DPyBz-av5x4W-611npi-ajXbEm-h3pkN-h2n2P-a4jLmq-54qDW-hVL1YU-7osfhN-5RBvjZ-5jNWNh-8sJ3iR-h2n82-rRwSR-h2mN4-h3ppK-h2mRs-h2i85-h2n6H-h2mVT-h2mUB-h2in8-h2iiw-h2icW-h3pnN-h2nfv-h2naZ-h2nm8-5ZUCNJ-75aTrq-rj6jWe-h2mXL-6psA47-7Woq2G-2Qvf2o-kgHHPn-5jCyQc-5oXYLW -->
 </div>
 
 Phone screening junior candidates is hard. With 20+ years of experience I find it hard to evaluate someone who&#8217;s new to the field or worked less than 6 months. What I&#8217;m looking for is potential, but I can&#8217;t fall back on traditional measures where I ask for evidence of a skill. Sure they might have a beginning grasp of some language or the ability to put together a bare bones web site or iPhone app, but I really can&#8217;t drill them on OO, Domain Driven Design, or functional programming.

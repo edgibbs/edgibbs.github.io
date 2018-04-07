@@ -12,7 +12,7 @@ categories:
   - test driven development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/i_broke_the_build.jpg" alt="I broke the build" /><br /> <!-- Picture taken by http://www.flickr.com/photos/dhaun/5626938236/in/photostream/ -->
+  <img src="/images/i_broke_the_build.jpg" alt="I broke the build" /><br /> <!-- Picture taken by http://www.flickr.com/photos/dhaun/5626938236/in/photostream/ -->
 </div>
 
 My first break of the CI build on a new team came about two weeks into starting the new job. We had made a small change to a dynamically created URL on a single page of the application. Normally this would fall into the category of &#8220;too simple to test&#8221; for me. My pairing partner pointed out when we started the story that we should put a test in for the change. I argued that changing a URL was too simple a change to bother writing a test for. He disagreed, but let me go ahead after some further discussion. After checking in the feature, about an hour later a developer on the other side of the room piped up with &#8220;Someone broke the build.&#8221; My pairing partner smiled and said, &#8220;I guess we didn&#8217;t need to test that.&#8221; 

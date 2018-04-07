@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/zen_fountain.jpg" />
+  <img src="/images/zen_fountain.jpg" />
 </div>
 
 <!-- http://www.flickr.com/photos/amunivers/100922541/ -->

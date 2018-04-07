@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/rubyonrails.jpg" />
+  <img src="/images/rubyonrails.jpg" />
 </div>
 
 I hopped over to <http://rubyonrails.org> about 7:40pm PST and found this surprise. After a few tries I confirmed it looks like they there&#8217;s a real issue. This is decidedly not what I was expecting. Hopefully it&#8217;s fixed soon.

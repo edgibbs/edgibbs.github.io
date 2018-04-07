@@ -11,7 +11,7 @@ categories:
   - scrum
   - software development
 ---
-![](http://edgibbs.com/images/storytime.jpg)
+![](/images/storytime.jpg)
 
 Keeping you backlog in order doesn&#8217;t tend to happen in isolation. My past experience is the backlog drifts because of a concentration on completing day to day Sprint tasks. You can tell when the backlog has drifted, the planning meeting goes long. Kane Mar suggests an approach of using a [Story Time meeting](http://danube.com/blog/kanemar/story_time_the_hidden_scrum_meeting).
 

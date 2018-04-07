@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/vim_posse.jpg" /><br /> <!-- http://www.flickr.com/photos/termie/2922917167/ -->
+  <img src="/images/vim_posse.jpg" /><br /> <!-- http://www.flickr.com/photos/termie/2922917167/ -->
 </div>
 
 <pre><b>College Roomate</b>: So you know vi?

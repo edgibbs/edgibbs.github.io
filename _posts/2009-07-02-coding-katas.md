@@ -12,7 +12,7 @@ categories:
   - test driven development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/coding_kata.jpg" /><br /> <!-- http://www.flickr.com/photos/seandreilinger/126872576/ -->
+  <img src="/images/coding_kata.jpg" /><br /> <!-- http://www.flickr.com/photos/seandreilinger/126872576/ -->
 </div>
 
 A few weeks ago at the local Ruby Users Group meeting there was a suggestion of actually writing some code at the meeting. The suggestion was to use a [Ruby Quiz exercise](http://rubyquiz.com/quiz16.html). It was quiz #16, a Rock, Paper, Scissors simulation. We broke up into small groups of about three people, coded for maybe 45 minutes and turned in our solutions. My team came in last but it finally pushed me to actually take up a long neglected todo item to start doing coding katas on a regular basis.

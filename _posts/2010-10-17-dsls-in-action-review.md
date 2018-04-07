@@ -11,7 +11,7 @@ categories:
   - software development
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/dsls_in_action.jpg" />
+  <img src="/images/dsls_in_action.jpg" />
 </div>
 
 As a software manager and developer I&#8217;ve followed the gradual adoption of DSLs as a mainstream technique. I&#8217;ve worked with numerous DSLs including:

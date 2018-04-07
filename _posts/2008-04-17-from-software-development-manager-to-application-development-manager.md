@@ -10,7 +10,7 @@ categories:
   - automated builds
   - software development
 ---
-![](http://edgibbs.com/images/aeron_chair.jpg)
+![](/images/aeron_chair.jpg)
 
 This week I started fresh with a new company and a new title. After four years as a Software Development Manager and a short stint as an Enterprise Architecture Manager I&#8217;ve now returned to managing a group of internal IT developers. The current title is Application Development Manager.
 

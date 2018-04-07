@@ -13,7 +13,7 @@ categories:
 Glancing at a [Hudson](https://hudson.dev.java.net/) dashboard in the morning I crack a little smile. 9-10 project statuses are right there in front of me. 
 
 <div align="center">
-  <a href="http://www.cafepress.com/buy/build+cop/-/pv_design_details/pg_1/id_15744437/opt_/fpt_/c_666/"><img src="http://edgibbs.com/images/build_cop.jpg" border="0" /></a></p> 
+  <a href="http://www.cafepress.com/buy/build+cop/-/pv_design_details/pg_1/id_15744437/opt_/fpt_/c_666/"><img src="/images/build_cop.jpg" border="0" /></a></p> 
   
   <p>
     <em>Great T-shirt on an audience member.</em> </div> 

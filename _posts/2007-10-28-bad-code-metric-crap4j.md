@@ -12,7 +12,7 @@ categories:
 ---
 A single number representing whether you&#8217;re six months worth of coding is actually not crap. Not code coverage, Checkstyle warnings or defects per thousand lines of code but a single score.
 
-<img src="http://edgibbs.com/images/crap4j.png" alt="crap4j.png" border="0" width="333" height="160" />
+<img src="/images/crap4j.png" alt="crap4j.png" border="0" width="333" height="160" />
 
 [Alberto Savio](http://www.artima.com/weblogs/index.jsp?blogger=agitator) of [Agitar Software](http://www.agitar.com/) presented on his new [Crap4J](http://www.crap4j.org/) tool at an [Agile Open California](http://www.agileopencalifornia.com/) session this week. Crap4J produces a single number defined by the following equation:
 

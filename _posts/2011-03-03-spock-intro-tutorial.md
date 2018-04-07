@@ -14,7 +14,7 @@ categories:
   - tutorial
 ---
 <div align="center">
-  <img src="http://edgibbs.com/images/spock.jpg" />
+  <img src="/images/spock.jpg" />
 </div>
 
 I gave a presentation on Spock a very nice BDD framework in Groovy a few months back to our Groovy Users Group in Sacramento. After using it on a real world Grails project the last few months it has grown on me to become my go to testing framework for Groovy/Grails or Java projects. A typical specification looks something like this:
