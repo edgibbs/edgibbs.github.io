@@ -13,23 +13,19 @@ categories:
 ---
 My default rule with mocking is to try to stick to stubs where possible. I don&#8217;t enjoy having to setup and verify interactions with mocks, but sometimes you have some code where that&#8217;s exactly what you need to do. I&#8217;ve used many frameworks in Java over the years from EasyMock to Mockito, but I was quite happy with how easy it was to do in Spock. I recently found myself having to build a test harness around some legacy code. The real world code was more involved, but it looked something like this:
 
-<div class="codecolorer-container java vibrant overflow-off" style="overflow:auto;white-space:nowrap;">
-  <table cellspacing="0" cellpadding="0">
-    <tr>
-      <td class="line-numbers">
-        <div>
-          1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />11<br />
-        </div>
-      </td>
-      
-      <td>
-        <div class="java codecolorer">
-          &nbsp; &nbsp; <span class="kw1">public</span> <span class="kw4">void</span> addDefaultQuestions<span class="br0">&#40;</span>Category category<span class="br0">&#41;</span> <span class="br0">&#123;</span><br /> &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span>categoryDao.<span class="me1">getCategory</span><span class="br0">&#40;</span>category.<span class="me1">getId</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>.<span class="me1">getQuestions</span><span class="br0">&#40;</span><span class="br0">&#41;</span>.<span class="me1">isEmpty</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span><br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">for</span> <span class="br0">&#40;</span>Question question <span class="sy0">:</span> category.<span class="me1">getQuestions</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span><br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span>question.<span class="me1">isDefaultQuestion</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span><br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; categoryDao.<span class="me1">addQuestion</span><span class="br0">&#40;</span>question, <span class="kw2">true</span><span class="br0">&#41;</span><span class="sy0">;</span><br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span><br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; categoryDao.<span class="me1">addQuestion</span><span class="br0">&#40;</span>question, <span class="kw2">false</span><span class="br0">&#41;</span><span class="sy0">;</span><br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span><br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span><br /> &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span><br /> &nbsp; &nbsp; <span class="br0">&#125;</span>
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
+{% highlight groovy linenos %}
+public void addDefaultQuestions(Category category) {
+  if (categoryDao.getCategory(category.getId()).getQuestions().isEmpty()) {
+    for (Question question : category.getQuestions()) {
+      if (question.isDefaultQuestion()) {
+        categoryDao.addQuestion(question, true);
+      } else {
+        categoryDao.addQuestion(question, false);
+      }
+    }
+  }
+}
+{% endhighlight %}
 
 The method is taking a category, checking if any questions related to the category exist in the database and then saving all the questions with a valid flag set to true or false. Not unusual in a typical corporate application, but I want to test two things:
 
@@ -42,23 +38,29 @@ With this code I needed to mock the categoryDao which used straight JDBC and mad
 
 The first test would show that I could save new questions in a category to the database:
 
-<div class="codecolorer-container groovy vibrant overflow-off" style="overflow:auto;white-space:nowrap;">
-  <table cellspacing="0" cellpadding="0">
-    <tr>
-      <td class="line-numbers">
-        <div>
-          1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />11<br />12<br />13<br />14<br />15<br />16<br />17<br />18<br />19<br />20<br />
-        </div>
-      </td>
-      
-      <td>
-        <div class="groovy codecolorer">
-          &nbsp;<a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20def"><span class="kw2">def</span></a> <span class="st0">"should only insert new default questions"</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span><br /> &nbsp; &nbsp; given:<br /> &nbsp; &nbsp; <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20def"><span class="kw2">def</span></a> question1 <span class="sy0">=</span> <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20new"><span class="kw2">new</span></a> Question<span class="br0">&#40;</span>defaultQuestion: <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20true"><span class="kw2">true</span></a><span class="br0">&#41;</span><br /> &nbsp; &nbsp; <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20def"><span class="kw2">def</span></a> question2 <span class="sy0">=</span> <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20new"><span class="kw2">new</span></a> Question<span class="br0">&#40;</span>defaultQuestion: <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20false"><span class="kw2">false</span></a><span class="br0">&#41;</span><br /> &nbsp; &nbsp; <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20def"><span class="kw2">def</span></a> category <span class="sy0">=</span> <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20new"><span class="kw2">new</span></a> Category<span class="br0">&#40;</span>questions: <span class="br0">&#91;</span>question1, question2<span class="br0">&#93;</span><span class="br0">&#41;</span><br /> <br /> &nbsp; &nbsp; CategoryDao dao <span class="sy0">=</span> Mock<span class="br0">&#40;</span><span class="br0">&#41;</span><br /> &nbsp; &nbsp; dao.<span class="me1">getCategory</span><span class="br0">&#40;</span>_<span class="br0">&#41;</span> <span class="sy0">>></span> <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20new"><span class="kw2">new</span></a> Category<span class="br0">&#40;</span><span class="br0">&#41;</span><br /> <br /> &nbsp; &nbsp; CategoryService service <span class="sy0">=</span> <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20new"><span class="kw2">new</span></a> CategoryService<span class="br0">&#40;</span><span class="br0">&#41;</span><br /> &nbsp; &nbsp; service.<span class="me1">setCategoryDao</span><span class="br0">&#40;</span>dao<span class="br0">&#41;</span><br /> <br /> &nbsp; &nbsp; when:<br /> &nbsp; &nbsp; service.<span class="me1">addDefaultQuestions</span><span class="br0">&#40;</span>category<span class="br0">&#41;</span><br /> <br /> &nbsp; &nbsp; then:<br /> &nbsp; &nbsp; <span class="nu0">1</span> <span class="sy0">*</span> dao.<span class="me1">addQuestion</span><span class="br0">&#40;</span>_, <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20true"><span class="kw2">true</span></a><span class="br0">&#41;</span><br /> &nbsp; &nbsp; <span class="nu0">1</span> <span class="sy0">*</span> dao.<span class="me1">addQuestion</span><span class="br0">&#40;</span>_, <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20false"><span class="kw2">false</span></a><span class="br0">&#41;</span><br /> <br /> &nbsp; <span class="br0">&#125;</span>
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
+{% highlight groovy linenos %}
+def "should only insert new default questions"() {
+  given:
+  def question1 = new Question(defaultQuestion: true)
+  def question2 = new Question(defaultQuestion: false)
+  def category = new Category(questions: [question1, question2])
+
+  CategoryDao dao = Mock()
+  dao.getCategory(_) >> new Category()
+
+  CategoryService service = new CategoryService()
+  service.setCategoryDao(dao)
+
+  when:
+  service.addDefaultQuestions(category)
+
+  then:
+  1 * dao.addQuestion(_, true)
+  1 * dao.addQuestion(_, false)
+
+}
+{% endhighlight %}
+
 
 So the steps are:
 
@@ -72,42 +74,39 @@ So the steps are:
 
 You can even specify the particular order you expect by breaking the verifications into separate **then:** blocks. For this example it wouldn&#8217;t matter on the order, but in case it did the last when then block would change to:
 
+{% highlight groovy linenos %}
+when:
+  service.addDefaultQuestions(category)
+
+  then:
+  1 * dao.addQuestion(_, true)
+
+  then:
+  1 * dao.addQuestion(_, false)
+{% endhighlight %}
 <div class="codecolorer-container groovy vibrant overflow-off" style="overflow:auto;white-space:nowrap;">
-  <table cellspacing="0" cellpadding="0">
-    <tr>
-      <td class="line-numbers">
-        <div>
-          1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />
-        </div>
-      </td>
-      
-      <td>
-        <div class="groovy codecolorer">
-          &nbsp; &nbsp; when:<br /> &nbsp; &nbsp; service.<span class="me1">addDefaultQuestions</span><span class="br0">&#40;</span>category<span class="br0">&#41;</span><br /> <br /> &nbsp; &nbsp; then:<br /> &nbsp; &nbsp; <span class="nu0">1</span> <span class="sy0">*</span> dao.<span class="me1">addQuestion</span><span class="br0">&#40;</span>_, <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20true"><span class="kw2">true</span></a><span class="br0">&#41;</span><br /> <br /> &nbsp; &nbsp; then:<br /> &nbsp; &nbsp; <span class="nu0">1</span> <span class="sy0">*</span> dao.<span class="me1">addQuestion</span><span class="br0">&#40;</span>_, <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20false"><span class="kw2">false</span></a><span class="br0">&#41;</span>
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
 
 And to round out testing the legacy Java code we need to test the negative example where it should do nothing if there are already questions in the database for the given category.
 
-<div class="codecolorer-container groovy vibrant overflow-off" style="overflow:auto;white-space:nowrap;">
-  <table cellspacing="0" cellpadding="0">
-    <tr>
-      <td class="line-numbers">
-        <div>
-          1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />11<br />12<br />13<br />14<br />15<br />16<br />17<br />18<br />
-        </div>
-      </td>
-      
-      <td>
-        <div class="groovy codecolorer">
-          &nbsp; <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20def"><span class="kw2">def</span></a> <span class="st0">"should add no questions if questions are already in database"</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span><br /> &nbsp; &nbsp; given:<br /> &nbsp; &nbsp; <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20def"><span class="kw2">def</span></a> question1 <span class="sy0">=</span> <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20new"><span class="kw2">new</span></a> Question<span class="br0">&#40;</span>defaultQuestion: <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20true"><span class="kw2">true</span></a><span class="br0">&#41;</span><br /> &nbsp; &nbsp; <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20def"><span class="kw2">def</span></a> question2 <span class="sy0">=</span> <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20new"><span class="kw2">new</span></a> Question<span class="br0">&#40;</span>defaultQuestion: <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20false"><span class="kw2">false</span></a><span class="br0">&#41;</span><br /> <br /> &nbsp; &nbsp; CategoryDao dao <span class="sy0">=</span> Mock<span class="br0">&#40;</span><span class="br0">&#41;</span><br /> &nbsp; &nbsp; dao.<span class="me1">getCategory</span><span class="br0">&#40;</span>_<span class="br0">&#41;</span> <span class="sy0">>></span> <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20new"><span class="kw2">new</span></a> Category<span class="br0">&#40;</span>questions: <span class="br0">&#91;</span>question1<span class="br0">&#93;</span><span class="br0">&#41;</span><br /> <br /> &nbsp; &nbsp; CategoryService service <span class="sy0">=</span> <a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20new"><span class="kw2">new</span></a> CategoryService<span class="br0">&#40;</span><span class="br0">&#41;</span><br /> &nbsp; &nbsp; service.<span class="me1">setCategoryDao</span><span class="br0">&#40;</span>dao<span class="br0">&#41;</span><br /> <br /> &nbsp; &nbsp; when:<br /> &nbsp; &nbsp; service.<span class="me1">addDefaultQuestions</span><span class="br0">&#40;</span><a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20new"><span class="kw2">new</span></a> Category<span class="br0">&#40;</span>questions: <span class="br0">&#91;</span>question2<span class="br0">&#93;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><br /> <br /> &nbsp; &nbsp; then:<br /> &nbsp; &nbsp; <span class="nu0"></span> <span class="sy0">*</span> dao.<span class="me1">addQuestion</span><span class="br0">&#40;</span>_,_<span class="br0">&#41;</span><br /> <br /> &nbsp; <span class="br0">&#125;</span>
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
+{% highlight groovy linenos %}
+ def "should add no questions if questions are already in database"() {
+    given:
+    def question1 = new Question(defaultQuestion: true)
+    def question2 = new Question(defaultQuestion: false)
+
+    CategoryDao dao = Mock()
+    dao.getCategory(_) >> new Category(questions: [question1])
+
+    CategoryService service = new CategoryService()
+    service.setCategoryDao(dao)
+
+    when:
+    service.addDefaultQuestions(new Category(questions: [question2]))
+
+    then:
+    * dao.addQuestion(_,_)
+
+  }
+{% endhighlight %}
 
 So we can test for the negative case by just verifying that addQuestion was called zero times.
