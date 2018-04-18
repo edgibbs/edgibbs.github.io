@@ -22,23 +22,13 @@ Given the Ruby community&#8217;s love for XP practices there must be a better op
 
 So the solution was to run Jenkins as my own personal bodyguard. We were looking at swapping out the CC.rb implementation, but it wasn&#8217;t a priority right away. So I dived in and setup Jenkins to run a build on my laptop. Instead of just building master I added whatever git feature branch I was working on and hooked up an audible trigger to play James Brown &#8220;I feel good!&#8221; for successes and &#8220;Houston I think we have a problem&#8221; for failures. I expected to use the rake plugin to launch the build, but it turned out it was much easier with using things like rvm and bundler to simply execute a script. My final scripts for the build looked something like the following:
 
-<div class="codecolorer-container text vibrant overflow-off" style="overflow:auto;white-space:nowrap;">
-  <table cellspacing="0" cellpadding="0">
-    <tr>
-      <td class="line-numbers">
-        <div>
-          1<br />2<br />3<br />4<br />5<br />
-        </div>
-      </td>
-      
-      <td>
-        <div class="text codecolorer">
-          bash -l -c "rvm use 1.8.7-p330@acme"<br /> bash -l -c "bundle install"<br /> bash -l -c "rake db:migrate"<br /> bash -l -c "rake parallel: prepare"<br /> bash -l -c "rake parallel: spec"
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
+{% highlight bash linenos %}
+bash -l -c "rvm use 1.8.7-p330@acme"
+bash -l -c "bundle install"
+bash -l -c "rake db:migrate"
+bash -l -c "rake parallel: prepare"
+bash -l -c "rake parallel: spec"
+{% endhighlight %}
 
 So finishing up a bit of functionality, I&#8217;d commit and about 10 minutes later my laptop would exclaim &#8220;I feel good&#8221;, or occasionally &#8220;Houston I think we have a problem&#8221; to let me know I missed something. So I had my own personal bodyguard build and I could happily let it run in the background. 
 
