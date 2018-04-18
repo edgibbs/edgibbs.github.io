@@ -37,83 +37,42 @@ The book covers both types with a greater focus on embedded internal DSLs that t
 
 The code samples do a good job of illustrating the various strengths of different languages you can use for implementing DSLs. The example domain is a Wall Street trading firm. The Java example looks like:
 
-<div class="codecolorer-container java vibrant overflow-off" style="overflow:auto;white-space:nowrap;">
-  <table cellspacing="0" cellpadding="0">
-    <tr>
-      <td class="line-numbers">
-        <div>
-          1<br />2<br />3<br />4<br />5<br />6<br />7<br />
-        </div>
-      </td>
-      
-      <td>
-        <div class="java codecolorer">
-          Order o <span class="sy0">=</span> <br /> &nbsp; <span class="kw1">new</span> Order.<span class="me1">Builder</span><span class="br0">&#40;</span><span class="br0">&#41;</span><br /> &nbsp; &nbsp; &nbsp; .<span class="me1">buy</span><span class="br0">&#40;</span><span class="nu0">100</span>, <span class="st0">"IBM"</span><span class="br0">&#41;</span><br /> &nbsp; &nbsp; &nbsp; .<span class="me1">atLimitPrice</span><span class="br0">&#40;</span><span class="nu0">300</span><span class="br0">&#41;</span><br /> &nbsp; &nbsp; &nbsp; .<span class="me1">allOrNone</span><span class="br0">&#40;</span><span class="br0">&#41;</span><br /> &nbsp; &nbsp; &nbsp; .<span class="me1">valueAs</span><span class="br0">&#40;</span><span class="kw1">new</span> OrderValuerImpl<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><br /> &nbsp; &nbsp; &nbsp; .<span class="me1">build</span><span class="br0">&#40;</span><span class="br0">&#41;</span>
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
+{% highlight java %}
+Order o = 
+  new Order.Builder()
+      .buy(100, "IBM")
+      .atLimitPrice(300)
+      .allOrNone()
+      .valueAs(new OrderValuerImpl())
+      .build()
+{% endhighlight %}
 
 Typical method chaining and a bit verbose. Not exactly the code you hope to show to a technically savvy business user.
 
-<div class="codecolorer-container groovy vibrant overflow-off" style="overflow:auto;white-space:nowrap;">
-  <table cellspacing="0" cellpadding="0">
-    <tr>
-      <td class="line-numbers">
-        <div>
-          1<br />2<br />3<br />4<br />5<br />
-        </div>
-      </td>
-      
-      <td>
-        <div class="groovy codecolorer">
-          newOrder.<span class="me1">to</span>.<span class="me1">buy</span><span class="br0">&#40;</span><span class="nu0">100</span>.<span class="me1">shares</span>.<span class="me1">of</span><span class="br0">&#40;</span><span class="st0">'IBM'</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span><br /> &nbsp; limitPrice &nbsp; &nbsp; &nbsp; <span class="nu0">300</span><br /> &nbsp; allOrNone &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.google.de/search?q=site%3Agroovy.codehaus.org/%20true"><span class="kw2">true</span></a><br /> &nbsp; valueAs &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="br0">&#40;</span>qty, unitPrice <span class="sy0">-></span> qty <span class="sy0">*</span> unitPrice <span class="sy0">-</span> <span class="nu0">500</span><span class="br0">&#41;</span><br /> <span class="br0">&#125;</span>
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
+{% highlight groovy %}
+newOrder.to.buy(100.shares.of('IBM')) {
+  limitPrice       300
+  allOrNone        true
+  valueAs          (qty, unitPrice -> qty * unitPrice - 500)
+}
+{% endhighlight %}
 
 Much nicer, even if the curly brackets still bug me.
 
-<div class="codecolorer-container lisp vibrant overflow-off" style="overflow:auto;white-space:nowrap;">
-  <table cellspacing="0" cellpadding="0">
-    <tr>
-      <td class="line-numbers">
-        <div>
-          1<br />2<br />3<br />4<br />
-        </div>
-      </td>
-      
-      <td>
-        <div class="lisp codecolorer">
-          <span class="br0">&#40;</span>def trade1<br /> &nbsp; <span class="br0">&#123;</span><span class="sy0">:</span><span class="me1">ref-no</span> <span class="st0">"tr-123"</span><br /> &nbsp; &nbsp;<span class="sy0">:</span><span class="me1">account</span> <span class="br0">&#123;</span><span class="sy0">:</span><span class="me1">no</span> <span class="st0">"c1-a1"</span> <span class="sy0">:</span><span class="kw1">name</span> <span class="st0">"john doe"</span> <span class="sy0">:</span><span class="me1">type</span> 'trading'<span class="br0">&#125;</span><br /> &nbsp; &nbsp;<span class="sy0">:</span><span class="me1">instrument</span> <span class="st0">"eq-123"</span> <span class="sy0">:</span><span class="kw1">value</span> <span class="nu0">1000</span><span class="br0">&#125;</span><span class="br0">&#41;</span>
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
+{% highlight clojure %}
+(def trade1
+  {:ref-no "tr-123"
+   :account {:no "c1-a1" :name "john doe" :type 'trading'}
+   :instrument "eq-123" :value 1000})
+{% endhighlight %}
 
 Lisp syntax, but very readable.
 
-<div class="codecolorer-container scala vibrant overflow-off" style="overflow:auto;white-space:nowrap;">
-  <table cellspacing="0" cellpadding="0">
-    <tr>
-      <td class="line-numbers">
-        <div>
-          1<br />2<br />3<br />
-        </div>
-      </td>
-      
-      <td>
-        <div class="scala codecolorer">
-          &nbsp;<a href="http://scala-lang.org"><span class="kw1">val</span></a> fixedIncomeTrade <span class="sy0">=</span> <br /> &nbsp; <span class="nu0">200</span> discount bonds IBM<br /> &nbsp; &nbsp; for<span class="sy0">_</span>client NOMURA on NYSE at <span class="nu0">72</span>.<span class="me1">ccy</span><span class="br0">&#40;</span>USD<span class="br0">&#41;</span>
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
+{% highlight scala %}
+val fixedIncomeTrade =
+  200 discount bonds IBM
+    for_client NOMURA on NYSE at 72.ccy(USD)
+{% endhighlight %}
 
 A nice syntax parsing out all the strings. I found the actual implementation classes for this example hard to follow, but the end resulting syntax might be worth the pain, though you can accomplish a similar syntax in Groovy or Ruby.
 
