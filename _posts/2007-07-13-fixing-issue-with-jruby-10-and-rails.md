@@ -14,25 +14,21 @@ In seeing if my post on installing [Deploying Rails to Tomcat as a WAR](http://e
 
 First off you still have to run the following command because the rails script file is still not set to be executable:
 
-<div class="codecolorer-container text vibrant overflow-off" style="overflow:auto;white-space:nowrap;">
-  <table cellspacing="0" cellpadding="0">
-    <tr>
-      <td class="line-numbers">
-        <div>
-          1<br />
-        </div>
-      </td>
-      
-      <td>
-        <div class="text codecolorer">
-          chmod 775 $JRUBY_HOME/bin/rails
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
+{% highlight bash %}
+chmod 775 $JRUBY_HOME/bin/rails
+{% endhighlight %}
 
 In addition I had to change the top shebang line of the script after I got this error:
+
+{% highlight bash %}
+rails --version
+/Applications/jruby-1.0/bin/rails: line 9: require: command not found
+/Applications/jruby-1.0/bin/rails: line 10: version: command not found
+/Applications/jruby-1.0/bin/rails: line 11: syntax error near unexpected token `('
+/Applications/jruby-1.0/bin/rails: line 11: `if ARGV.first =~ /^_(.*)_$/ and Gem::Version.correct?
+{% endhighlight %}
+
+
 
 <div class="codecolorer-container text vibrant overflow-off" style="overflow:auto;white-space:nowrap;">
   <table cellspacing="0" cellpadding="0">
@@ -54,40 +50,12 @@ In addition I had to change the top shebang line of the script after I got this 
 
 I found [the fix](http://ashishwave.wordpress.com/2007/06/29/installing-jruby-on-rails-jror/) here, but you just change the top shebang line from:
 
-<div class="codecolorer-container text vibrant overflow-off" style="overflow:auto;white-space:nowrap;">
-  <table cellspacing="0" cellpadding="0">
-    <tr>
-      <td class="line-numbers">
-        <div>
-          1<br />
-        </div>
-      </td>
-      
-      <td>
-        <div class="text codecolorer">
-          #!/Applications/jruby-1.0/bin/jruby
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
+{% highlight bash %}
+#!/Applications/jruby-1.0/bin/jruby
+{% endhighlight %}
 
 To:
 
-<div class="codecolorer-container text vibrant overflow-off" style="overflow:auto;white-space:nowrap;">
-  <table cellspacing="0" cellpadding="0">
-    <tr>
-      <td class="line-numbers">
-        <div>
-          1<br />
-        </div>
-      </td>
-      
-      <td>
-        <div class="text codecolorer">
-          #!/usr/bin/env jruby
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
+{% highlight bash %}
+#!/usr/bin/env jruby
+{% endhighlight %}
