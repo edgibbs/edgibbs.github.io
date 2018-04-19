@@ -12,7 +12,7 @@ categories:
   - software development
 ---
 <div>
-  <img src="/images/agile-open-logo.png" alt="agile_open_logo.png" border="0" width="135" height="116" />
+  <img src="/images/agile_open_logo.png" alt="agile_open_logo.png" border="0" width="135" height="116" />
 </div>
 
 I&#8217;m off to my first open space conference later this month at Open Agile California. Should be a great chance to recharge some batteries and talk about issues with sustaining agile. I know after three years of Agile and two years of our official effort that we no longer do a lot of questioning and looking outward for new ideas. I&#8217;m focused on how you re-energize an organization at this phase, especially when many of the original high level sponsors of the effort have moved on.
