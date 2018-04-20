@@ -38,13 +38,15 @@ It&#8217;s a very short article so he doesn&#8217;t spend much time with the iss
 
 If one were actually to take a comment driven design approach I can&#8217;t see how you&#8217;d be able to write useful comments about design decisions. You have to actually write tests and code to make any reasonable comment about why a design was chosen. And then how are you doing document first? Does your comment look like:
 
-<pre>// A binary search is used here for better performance.
+{% highlight java %}
+// A binary search is used here for better performance.
 public String findShortestNode() {
-</pre>
+{% endhighlight %}
 
 Then doing a few cycles of writing tests and refactoring the code you update it to:
 
-<pre>/**
+{% highlight java %}
+/**
  * A binary search turned out to be slower than
  * the Boyer-Moore algorithm for the data 
  * sets of interest, thus we have used the more
@@ -53,6 +55,6 @@ Then doing a few cycles of writing tests and refactoring the code you update it 
  * to a string search technique.
  */
 public String findShortestNode() {
-</pre>
+{% endhighlight %}
 
 I think I&#8217;ll just keep adding the rare comment to explain why when I need it rather than starting out comment first.
