@@ -36,6 +36,7 @@ plugins:
   - jekyll-include-cache
 paginate: 5
 paginate_path: /page:num/
+show_drafts: false
 sass:
   sass_dir: assets/stylesheets
 # Exclude from processing.
