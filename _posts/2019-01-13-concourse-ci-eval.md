@@ -2,6 +2,7 @@
 title: Evaluating Concourse CI
 layout: post
 author: Ed Gibbs
+permalink: /2019/01/13/concourse-ci-eval/
 categories:
   - software development
   - automated builds
