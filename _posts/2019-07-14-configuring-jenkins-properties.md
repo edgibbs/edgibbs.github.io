@@ -1,6 +1,7 @@
 ---
 title: Configuring Jenkins Properties As Code
 layout: post
+permalink: /2019/07/14/configuring-jenkins-properties/
 categories:
   - software development
   - automated builds
