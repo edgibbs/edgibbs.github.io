@@ -23,4 +23,4 @@ Oddest Facts:
   * Nevada High School Chess Champion in 1987.
   * Played paintball on the national circuit for several years.
 
-Contact: edward_gibbs at yahoo dot com
+Contact: ed at edgibbs dot com
