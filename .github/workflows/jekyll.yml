@@ -34,13 +34,15 @@ jobs:
           bundler-cache: true
 
       - name: jekyll build
-        run: JEKYLL_ENV=production bundle exec jekyll build
+        run: cd _site && JEKYLL_ENV=production bundle exec jekyll build
 
       - name: push _site to master
         run: |
           cd _site
+          cd _site
           git config user.name "Ed Gibbs"
           git config user.email "ed@edgibbs.com"
           git add --all
-          git commit -m "jekyll build from Action ${GITHUB_RUN_NUMBER} :octocat:"
-          git push --force origin development:master
+          git status -s
+          # git commit -m "jekyll build from Action ${GITHUB_RUN_NUMBER} :octocat:"
+          # git push --force origin development:master
