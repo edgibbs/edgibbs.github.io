@@ -43,7 +43,8 @@ jobs:
           pwd
           git config user.name "Ed Gibbs"
           git config user.email "ed@edgibbs.com"
-          git add . -f
+          git add --all
           git status -s
-          git commit -m "jekyll build from Action ${GITHUB_RUN_NUMBER} :octocat:"
-          git push --force origin development:master
+          git commit -a -m "jekyll build from Action ${GITHUB_RUN_NUMBER} :octocat:"
+          git show --pretty="" --name-only
+          # git push --force origin development:master
