@@ -23,9 +23,8 @@ jobs:
       - name: debug
         run: |
           pwd
-          git remote -v
           cd _site
-          ls -l
+          git remote -v
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
