@@ -14,7 +14,6 @@ jobs:
       - name: Make _site
         run: |
           mkdir _site
-          cd _site
 
       - name: checkout development
         uses: actions/checkout@v2
@@ -24,6 +23,7 @@ jobs:
       - name: debug
         run: |
           pwd
+          cd _site
           ls -l
 
       - name: Set up Ruby
