@@ -38,7 +38,7 @@ jobs:
       - name: push _site to master
         run: |
           cd _site
-          echo $GITHUB_ACTION
+          echo $GITHUB_ACTOR
           echo $GITHUB_SHA
           echo "done"
           ls -l
