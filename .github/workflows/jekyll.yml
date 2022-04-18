@@ -27,13 +27,13 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: ${{ runner.os }}-gems-
 
-      # - name: bundle install
-      #   run: |
-      #     bundle install --path=vendor/bundle --jobs 4 --retry 3
-      #     bundle clean
-      #
-      # - name: jekyll build
-      #   run: JEKYLL_ENV=production bundle exec jekyll build
+      - name: bundle install
+        run: |
+          bundle install --path=vendor/bundle --jobs 4 --retry 3
+          bundle clean
+
+      - name: jekyll build
+        run: JEKYLL_ENV=production bundle exec jekyll build
       #
       # - name: push _site to master
       #   run: |
