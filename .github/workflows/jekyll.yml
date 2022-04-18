@@ -48,4 +48,4 @@ jobs:
           git status -s
           git commit -m "jekyll build from Action ${GITHUB_RUN_NUMBER} :octocat:"
           git show --pretty="" --name-only
-          git push --force git@github.com:edgibbs/edgibbs.github.io.git master:master
+          git push --force https://github.com/edgibbs/edgibbs.github.io master:master
