@@ -12,7 +12,9 @@ jobs:
     steps:
 
       - name: Make _site
-        run: mkdir _site
+        run: |
+          mkdir _site
+          cd _site
 
       - name: checkout development
         uses: actions/checkout@v2
