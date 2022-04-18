@@ -44,7 +44,7 @@ jobs:
           git init
           git config user.name "Ed Gibbs"
           git config user.email "ed@edgibbs.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git add .
           git status -s
           git commit -m "jekyll build from Action ${GITHUB_RUN_NUMBER} :octocat:"
