@@ -44,8 +44,9 @@ jobs:
           git init
           git config user.name "Ed Gibbs"
           git config user.email "ed@edgibbs.com"
+          git remote add origin https://github.com/edgibbs/edgibbs.github.io
           git add .
           git status -s
           git commit -m "jekyll build from Action ${GITHUB_RUN_NUMBER} :octocat:"
           git show --pretty="" --name-only
-          git push --force https://github.com/edgibbs/edgibbs.github.io master:master
+          git push --force origin master:master
