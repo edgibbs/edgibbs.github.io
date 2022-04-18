@@ -29,6 +29,6 @@ jobs:
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git add . -f
-          git commit -m "jekyll build from Action ${GITHUB_RUN_NUMBER} :ocotocat:"
+          git commit -m "jekyll build from Action ${GITHUB_RUN_NUMBER} :octocat:"
           git log --pretty=oneline
           git push --force origin development:master
