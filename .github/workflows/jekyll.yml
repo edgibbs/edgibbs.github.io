@@ -14,18 +14,19 @@ jobs:
       - name: checkout development
         uses: actions/checkout@v2
 
-      # - name: setup ruby
-      #   uses: actions/setup-ruby@v1
-      #   with:
-      #     ruby-version: 2.7
-      #
-      # - name: cache gems
-      #   uses: actions/cache@v2
-      #   with:
-      #     path: vendor/bundle
-      #     key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-      #     restore-keys: ${{ runner.os }}-gems-
-      #
+      - name: setup ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+          bundler-cache: true
+
+      - name: cache gems
+        uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: ${{ runner.os }}-gems-
+
       # - name: bundle install
       #   run: |
       #     bundle install --path=vendor/bundle --jobs 4 --retry 3
