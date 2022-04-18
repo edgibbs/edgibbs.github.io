@@ -27,10 +27,10 @@ jobs:
       #     key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
       #     restore-keys: ${{ runner.os }}-gems-
 
-      - name: bundle install
-        run: |
-          bundle install --path=vendor/bundle --jobs 4 --retry 3
-          bundle clean
+      # - name: bundle install
+      #   run: |
+      #     bundle install --path=vendor/bundle --jobs 4 --retry 3
+      #     bundle clean
 
       - name: jekyll build
         run: JEKYLL_ENV=production bundle exec jekyll build
@@ -40,7 +40,7 @@ jobs:
           cd _site && \
           git config user.name "${GITHUB_ACTOR}" && \
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" && \
-          git add . && \
+          git add --all && \
           git commit -m "jekyll build from Action ${GITHUB_SHA}"
           # git commit -m "jekyll build from Action ${GITHUB_SHA}" && \
           # git push --force origin development:master
