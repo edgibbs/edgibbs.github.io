@@ -11,8 +11,13 @@ jobs:
 
     steps:
 
+      - name: Make _site
+        run: mkdir _site
+
       - name: checkout development
         uses: actions/checkout@v2
+        with:
+          path: '_site'
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -28,6 +33,6 @@ jobs:
           cd _site
           git config user.name "Ed Gibbs"
           git config user.email "ed@edgibbs.com"
-          git add . -f
+          git add --all
           git commit -m "jekyll build from Action ${GITHUB_RUN_NUMBER} :octocat:"
           git push --force origin development:master
