@@ -31,8 +31,5 @@ jobs:
           git add . -f
           git commit -m "jekyll build from Action ${GITHUB_RUN_NUMBER} :ocotocat:"
           git log --pretty=oneline
-          # git status
-          # cd fake_dir
-          # ls -l
-          # git commit -m "jekyll build from Action ${GITHUB_SHA}" && \
+          git log --pretty=oneline
           # git push --force origin development:master
