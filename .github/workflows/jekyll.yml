@@ -19,6 +19,11 @@ jobs:
         with:
           path: _site
 
+      - name: debug
+        run: |
+          pwd
+          ls -l
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
