@@ -45,5 +45,5 @@ jobs:
           git config user.email "ed@edgibbs.com"
           git add . -f
           git status -s
-          # git commit -m "jekyll build from Action ${GITHUB_RUN_NUMBER} :octocat:"
-          # git push --force origin development:master
+          git commit -m "jekyll build from Action ${GITHUB_RUN_NUMBER} :octocat:"
+          git push --force origin development:master
