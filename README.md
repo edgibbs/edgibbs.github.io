@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/edgibbs/edgibbs.github.io.svg?branch=development)](https://travis-ci.org/edgibbs/edgibbs.github.io)
+![example workflow](https://github.com/edgibbs/edgibbs.github.io/.github/workflows/jekyll.yml/badge.svg)
 
 My current Jekyll based blog. ( PHP Machine -> Wordpress -> Jekyll)
-
