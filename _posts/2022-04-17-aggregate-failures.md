@@ -14,8 +14,8 @@ Many tests in Rails projects are integration tests because they rely on actual d
 One assertion per test is great rule when you don't have tens of thousands of specs running. `:aggregate-failures`
 allows you to have multiple assertions while still reporting on each failure clearly.
 
-As a bounus it is honored by `Rubocop RSpec RSpec/MultipleExpectations`. Not sure why this isn't
-documented better with Rubocop RSpec. Here is the code within the `MultipleExpecations` class that
+As a bonus it is honored by `Rubocop RSpec RSpec/MultipleExpectations`. Not sure why this isn't
+documented better with Rubocop RSpec. Here is the code within the `MultipleExpectations` class that
 enforces the one assert per spec rule:
 
 [MultipleExpectations](https://github.com/rubocop/rubocop-rspec/blob/master/lib/rubocop/cop/rspec/multiple_expectations.rb)
