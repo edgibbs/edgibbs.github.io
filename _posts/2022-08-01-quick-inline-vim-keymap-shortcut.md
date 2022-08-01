@@ -11,7 +11,7 @@ I often forget the exact syntax for writing a quick shortcut in in vim/neovim. A
 this morning I made a decision to memorialize the approach. Usually it's for a simple command like running tests in
 an Elixir mix console:
 
-{% highlight zsh %}
+{% highlight vim %}
 :nnoremap ,e :!mix test<CR>
 {% endhighlight %}
 
