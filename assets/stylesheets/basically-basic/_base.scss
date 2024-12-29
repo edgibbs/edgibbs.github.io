@@ -1,21 +1,23 @@
+@use "basically-basic/functions/fluid-type";
+@use "basically-basic/variables";
 /* ==========================================================================
    Base elements
    ========================================================================== */
 
 html {
-  @include fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size);
+  @include fluid-type.fluid-type(variables.$min-vw, variables.$max-vw, variables.$min-font-size, variables.$max-font-size);
 }
 
 body {
   display: -ms-flexbox;
   display: flex;
-  background: $background-color;
-  color: $text-color;
+  background: variables.$background-color;
+  color: variables.$text-color;
 }
 
 blockquote,
 q {
-  color: tint($text-color, 40%);
+  color: tint(variables.$text-color, 40%);
   font-style: italic;
 
   cite {
@@ -34,7 +36,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: $monospace-font-family;
+  font-family: variables.$monospace-font-family;
 }
 
 kbd {
@@ -54,32 +56,32 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $headline-font-family;
+  font-family: variables.$headline-font-family;
   text-rendering: optimizeLegibility; /* enable common ligatures and kerning */
 }
 
 h1 {
-  @include fluid-type($min-vw, $max-vw, $h1-min, $h1-max);
+  @include fluid-type.fluid-type(variables.$min-vw, variables.$max-vw, variables.$h1-min, variables.$h1-max);
 }
 
 h2 {
-  @include fluid-type($min-vw, $max-vw, $h2-min, $h2-max);
+  @include fluid-type.fluid-type(variables.$min-vw, variables.$max-vw, variables.$h2-min, variables.$h2-max);
 }
 
 h3 {
-  @include fluid-type($min-vw, $max-vw, $h3-min, $h3-max);
+  @include fluid-type.fluid-type(variables.$min-vw, variables.$max-vw, variables.$h3-min, variables.$h3-max);
 }
 
 h4 {
-  @include fluid-type($min-vw, $max-vw, $h4-min, $h4-max);
+  @include fluid-type.fluid-type(variables.$min-vw, variables.$max-vw, variables.$h4-min, variables.$h4-max);
 }
 
 h5 {
-  @include fluid-type($min-vw, $max-vw, $h5-min, $h5-max);
+  @include fluid-type.fluid-type(variables.$min-vw, variables.$max-vw, variables.$h5-min, variables.$h5-max);
 }
 
 h6 {
-  @include fluid-type($min-vw, $max-vw, $h6-min, $h6-max);
+  @include fluid-type.fluid-type(variables.$min-vw, variables.$max-vw, variables.$h6-min, variables.$h6-max);
 }
 
 dt {
@@ -95,7 +97,7 @@ dd {
 }
 
 pre {
-  @include fluid-type($min-vw, $max-vw, 12px, 14px);
+  @include fluid-type.fluid-type(variables.$min-vw, variables.$max-vw, 12px, 14px);
 }
 
 figcaption {
@@ -104,10 +106,10 @@ figcaption {
 }
 
 a {
-  color: $accent-color;
+  color: variables.$accent-color;
 
   &:hover {
-    color: shade($accent-color, 25%);
+    color: shade(variables.$accent-color, 25%);
   }
 }
 

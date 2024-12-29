@@ -1,9 +1,11 @@
+@use "basically-basic/mixins/lists";
+
 /* ==========================================================================
    Contact lists
    ========================================================================== */
 
 .contact-list {
-  @include list-unstyled;
+  @include lists.list-unstyled;
 
   .icon {
     margin-right: 0.25em;

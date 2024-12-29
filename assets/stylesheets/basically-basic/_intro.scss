@@ -1,3 +1,7 @@
+@use "basically-basic/functions/fluid-type";
+@use "basically-basic/mixins/lists";
+@use "basically-basic/variables";
+
 /* ==========================================================================
    Page intro
    ========================================================================== */
@@ -19,7 +23,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba($accent-color, 0.25);
+    background-color: rgba(variables.$accent-color, 0.25);
     content: '';
   }
 
@@ -37,19 +41,19 @@
 }
 
 .intro-title {
-  @include fluid-type($min-vw, $max-vw, 26px, 80px);
   margin-bottom: 1rem;
-  color: tint($text-color, 25%);
+  color: tint(variables.$text-color, 25%);
   line-height: 1;
+  @include fluid-type.fluid-type(variables.$min-vw, variables.$max-vw, 26px, 80px);
 }
 
 .intro-subtitle {
-  @include fluid-type($min-vw, $max-vw, 18px, 28px);
   font-style: italic;
+  @include fluid-type.fluid-type(variables.$min-vw, variables.$max-vw, 18px, 28px);
 }
 
 .intro-actions {
-  @include list-unstyled;
+  @include lists.list-unstyled;
 
   li {
     display: inline-block;

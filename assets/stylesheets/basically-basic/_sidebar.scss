@@ -1,3 +1,7 @@
+@use "basically-basic/functions/fluid-type";
+@use "basically-basic/variables";
+@use "basically-basic/vendor/breakpoint/breakpoint";
+
 /* ==========================================================================
    Sidebar
    ========================================================================== */
@@ -7,15 +11,15 @@
   top: 0;
   left: 0;
   width: 100%;
-  max-width: $sidebar-width;
+  max-width: variables.$sidebar-width;
   height: 100%;
   z-index: 50;
   visibility: hidden;
   -webkit-transition: visibility 0s 0.3s;
   transition: visibility 0s 0.3s;
 
-  @include breakpoint($large) {
-    max-width: (1.5 * $sidebar-width);
+  @include breakpoint.breakpoint(variables.$large) {
+    max-width: (1.5 * variables.$sidebar-width);
   }
 
   &.is--visible {
@@ -42,7 +46,7 @@
     /* line hover effect */
     a {
       position: relative;
-      color: $base-color;
+      color: variables.$base-color;
 
       &::before {
         display: block;
@@ -53,12 +57,12 @@
         height: 1px;
         -webkit-transition: width 0.3s cubic-bezier(0, 0, 0.3, 1);
         transition: width 0.3s cubic-bezier(0, 0, 0.3, 1);
-        background-color: $base-color;
+        background-color: variables.$base-color;
         content: "";
       }
 
       &:hover {
-        color: $accent-color;
+        color: variables.$accent-color;
       }
 
       &:hover::before {
@@ -71,18 +75,17 @@
     width: 100%;
     height: 100%;
     padding: 1.5em;
-    background-color: $sidebar-background-color;
+    background-color: variables.$sidebar-background-color;
     overflow-x: hidden;
     -webkit-box-shadow: inset -1em 0 5em 0 rgba(0, 0, 0, 0.125);
     box-shadow: inset -1em 0 5em 0 rgba(0, 0, 0, 0.125);
 
-    @include breakpoint($medium) {
+    @include breakpoint.breakpoint(variables.$medium) {
       padding: 3rem;
     }
   }
 
   .menu {
-    @include fluid-type($min-vw, $max-vw, 24px, 48px);
     position: relative;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
@@ -99,17 +102,17 @@
       bottom: 0;
       width: 1.5em;
       height: 1px;
-      background-color: $base-color;
+      background-color: variables.$base-color;
       content: "";
     }
 
     li {
       margin-bottom: 1.5rem;
     }
+    @include fluid-type.fluid-type(variables.$min-vw, variables.$max-vw, 24px, 48px);
   }
 
   .contact-list {
-    @include fluid-type($min-vw, $max-vw, 18px, 24px);
     margin-top: 0.5rem;
     padding-top: 0.5rem;
 
@@ -119,9 +122,10 @@
 
     a {
       display: block;
-      color: $base-color;
+      color: variables.$base-color;
       text-decoration: none;
     }
+    @include fluid-type.fluid-type(variables.$min-vw, variables.$max-vw, 18px, 24px);
   }
 }
 
@@ -137,15 +141,15 @@
   right: 0;
   margin: 1.8125rem 0;
   padding-right: 1rem;
-  background-color: $background-color;
+  background-color: variables.$background-color;
   z-index: 10000;
 
-  @include breakpoint($medium) {
+  @include breakpoint.breakpoint(variables.$medium) {
     right: 2rem;
     padding-right: 0;
   }
 
-  @include breakpoint($large) {
+  @include breakpoint.breakpoint(variables.$large) {
     right: 5vw;
   }
 
@@ -162,5 +166,5 @@
 .sidebar-toggle-label {
   margin-left: 0.5rem;
   font-weight: bold;
-  color: $text-color;
+  color: variables.$text-color;
 }

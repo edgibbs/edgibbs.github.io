@@ -1,3 +1,8 @@
+@use "basically-basic/variables";
+@use "basically-basic/vendor/breakpoint/breakpoint";
+// @use "basically-basic/mixins";
+ @use "basically-basic/mixins/lists"; // Import lists mixin first
+
 /* ==========================================================================
    Layout
    ========================================================================== */
@@ -14,11 +19,12 @@
   height: 100%;
   min-height: 100vh;
   transform: translateX(0);
-  transition: $global-transition;
-  background-color: $background-color;
+  transition: variables.$global-transition;
+  background-color: variables.$background-color;
   z-index: 100;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  padding-left: 2rem;
 }
 
 .intro,
@@ -26,22 +32,22 @@ main {
   > .inner {
     padding: 0 0.5rem;
 
-    @include breakpoint($small) {
+    @include breakpoint.breakpoint(variables.$small) {
       padding-right: 1rem;
       padding-left: 1rem;
     }
 
-    @include breakpoint($medium) {
+    @include breakpoint.breakpoint(variables.$medium) {
       padding-right: 2rem;
       padding-left: 2rem;
     }
 
-    @include breakpoint($large) {
+    @include breakpoint.breakpoint(variables.$large) {
       padding-right: 3rem;
       padding-left: 3rem;
     }
 
-    @include breakpoint($xlarge) {
+    @include breakpoint.breakpoint(variables.$xlarge) {
       padding-right: 4rem;
       padding-left: 4rem;
     }
@@ -57,7 +63,7 @@ main {
 }
 
 .inner {
-  max-width: $xlarge;
+  max-width: variables.$xlarge;
 }
 
 /*
@@ -67,7 +73,7 @@ main {
 .layout--post,
 .layout--page {
   .entry-content {
-    @include breakpoint($large) {
+    @include breakpoint.breakpoint(variables.$large) {
       width: span(14 of 16);
     }
   }
@@ -80,14 +86,14 @@ main {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
-    @include breakpoint($medium) {
+    @include breakpoint.breakpoint(variables.$medium) {
       -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
     }
   }
 
   .entry-content {
-    @include breakpoint($medium) {
+    @include breakpoint.breakpoint(variables.$medium) {
       -ms-flex: 1;
       flex: 1;
     }
@@ -97,16 +103,16 @@ main {
     order: -1;
     -ms-flex-order: -1;
 
-    @include breakpoint($medium) {
+    @include breakpoint.breakpoint(variables.$medium) {
       order: initial;
       -ms-flex-order: initial;
     }
 
     .author-picture {
       margin: 0 0 2rem;
-      border-radius: 2 * $border-radius;
+      border-radius: 2 * variables.$border-radius;
 
-      @include breakpoint($medium) {
+      @include breakpoint.breakpoint(variables.$medium) {
         margin: 0 0 0 2rem;
       }
     }
@@ -116,7 +122,7 @@ main {
 .layout--cv {
   .entries {
     .entry-header {
-      @include breakpoint($medium) {
+      @include breakpoint.breakpoint(variables.$medium) {
         width: span(5 of 16);
         padding-right: gutter(1 of 16);
 
@@ -128,7 +134,7 @@ main {
     }
 
     .entry-content {
-      @include breakpoint($medium) {
+      @include breakpoint.breakpoint(variables.$medium) {
         float: right;
         width: span(11 of 16);
       }
@@ -137,7 +143,7 @@ main {
 
   .entry {
     a {
-      color: $accent-color;
+      color: variables.$accent-color;
     }
 
     address {
@@ -153,8 +159,8 @@ main {
 
     .date {
       margin-bottom: 1rem;
-      color: tint($text-color, 40%);
-      font-family: $monospace-font-family;
+      color: tint(variables.$text-color, 40%);
+      font-family: variables.$monospace-font-family;
       font-size: 80%;
     }
 
@@ -167,7 +173,7 @@ main {
 
     .courses,
     .keywords {
-      @include list-unstyled;
+      @include lists.list-unstyled;
     }
   }
 

@@ -1,14 +1,20 @@
+@use "basically-basic/functions/fluid-type";
+@use "basically-basic/mixins/clearfix";
+@use "basically-basic/mixins/lists";
+@use "basically-basic/variables";
+@use "basically-basic/vendor/breakpoint/breakpoint";
+
 /* ==========================================================================
    Entries (Posts, collection documents, etc.)
    ========================================================================== */
 
 .entry {
-  @include clearfix();
+  @include clearfix.clearfix();
   margin-bottom: 2rem;
   padding-bottom: 2rem;
 
   &:not(:last-child) {
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid variables.$border-color;
   }
 
   a {
@@ -17,18 +23,17 @@
 }
 
 .entry-title {
-  @include fluid-type($min-vw, $max-vw, 18px, 24px);
   margin-bottom: 0.5rem;
-  color: tint($text-color, 25%);
+  color: tint(variables.$text-color, 25%);
   line-height: inherit;
 
   a {
     text-decoration: none;
   }
+  @include fluid-type.fluid-type(variables.$min-vw, variables.$max-vw, 18px, 24px);
 }
 
 .entry-meta {
-  @include fluid-type($min-vw, $max-vw, 12px, 16px);
   margin-bottom: 1rem;
 
   a {
@@ -43,8 +48,9 @@
 
   .icon {
     margin-right: 0.5em;
-    fill: $accent-color;
+    fill: variables.$accent-color;
   }
+  @include fluid-type.fluid-type(variables.$min-vw, variables.$max-vw, 12px, 16px);
 }
 
 /*
@@ -56,12 +62,12 @@
     word-wrap: break-word; /* break long words that could overflow */
 
     a:hover {
-      color: $accent-color;
+      color: variables.$accent-color;
     }
   }
 
   .entry-excerpt {
-    @include breakpoint($medium) {
+    @include breakpoint.breakpoint(variables.$medium) {
       width: span(11 of 16);
     }
 
@@ -77,7 +83,7 @@
   }
 
   .entry-content {
-    @include breakpoint($medium) {
+    @include breakpoint.breakpoint(variables.$medium) {
       width: span(11 of 16);
     }
 
@@ -88,23 +94,23 @@
   }
 
   .entry-meta {
-    @include breakpoint($medium) {
+    @include breakpoint.breakpoint(variables.$medium) {
       float: right;
       width: span(5 of 16 last);
       padding-left: gutter(1 of 16);
     }
 
     ul {
-      @include list-unstyled();
+      @include lists.list-unstyled();
 
-      @include breakpoint(max-width $medium) {
+      @include breakpoint.breakpoint(max-width variables.$medium) {
         li {
           display: inline-block;
           margin-right: 1.5rem;
         }
       }
 
-      @include breakpoint($medium) {
+      @include breakpoint.breakpoint(variables.$medium) {
         li {
           padding-bottom: 0.5rem;
         }
@@ -127,7 +133,7 @@
   h4,
   h5,
   h6 {
-    color: tint($text-color, 25%);
+    color: tint(variables.$text-color, 25%);
   }
 }
 
@@ -135,7 +141,7 @@
 .footnotes {
   margin: 2rem 0;
   padding-top: 1rem;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid variables.$border-color;
   font-size: 80%;
 }
 

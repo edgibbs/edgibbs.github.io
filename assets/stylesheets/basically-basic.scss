@@ -5,36 +5,42 @@
  * https://github.com/mmistakes/jekyll-theme-basically-basic/blob/master/LICENSE.md
 */
 
-@import "basically-basic/functions";
-@import "basically-basic/variables";
-@import "basically-basic/mixins";
-@import "basically-basic/vendor/breakpoint/breakpoint";
-@include breakpoint-set("to ems", true);
-@import "basically-basic/vendor/susy/susy";
+@use "basically-basic/functions";
+@use "basically-basic/variables";
+@use "basically-basic/mixins";
+@use "basically-basic/vendor/breakpoint/breakpoint";
+@use "basically-basic/vendor/susy/susy";
 
 /* Core CSS */
-@import "basically-basic/reset";
-@import "basically-basic/base";
-@import "basically-basic/layout";
-@import "basically-basic/tables";
+@use "basically-basic/reset";
+@use "basically-basic/base";
+@use "basically-basic/layout";
+@use "basically-basic/tables";
 
 /* Components */
-@import "basically-basic/global";
-@import "basically-basic/sidebar";
-@import "basically-basic/navigation";
-@import "basically-basic/search";
-@import "basically-basic/footer";
-@import "basically-basic/entries";
-@import "basically-basic/buttons";
-@import "basically-basic/icons";
-@import "basically-basic/intro";
-@import "basically-basic/navicons";
-@import "basically-basic/contact-lists";
-@import "basically-basic/syntax-highlighting";
-@import "basically-basic/responsive-embed";
+@use "basically-basic/global";
+@use "basically-basic/sidebar";
+@use "basically-basic/navigation";
+@use "basically-basic/search";
+@use "basically-basic/footer";
+@use "basically-basic/entries";
+@use "basically-basic/buttons";
+@use "basically-basic/icons";
+@use "basically-basic/intro";
+@use "basically-basic/navicons";
+@use "basically-basic/contact-lists";
+@use "basically-basic/syntax-highlighting";
+@use "basically-basic/responsive-embed";
 
 /* Utility classes */
-@import "basically-basic/utilities";
+@use "basically-basic/utilities";
 
 /* Print */
-@import "basically-basic/print";
+@use "basically-basic/print";
+
+// @use "basically-basic/vendor/breakpoint/settings";
+// @include breakpoint.breakpoint-set("to ems", true);
+
+// @include settings.breakpoint-set("to ems", true);
+// @use "basically-basic/ems";
+

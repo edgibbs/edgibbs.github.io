@@ -1,3 +1,5 @@
+@use "basically-basic/variables";
+
 /* ==========================================================================
    Buttons
    ========================================================================== */
@@ -6,8 +8,8 @@
   display: inline-block;
   padding: 0.5em 1em;
   border: 0;
-  border-radius: $border-radius;
-  background-color: $accent-color;
+  border-radius: variables.$border-radius;
+  background-color: variables.$accent-color;
   color: #fff;
   font-weight: bold;
   text-align: center;
@@ -15,12 +17,12 @@
   cursor: pointer;
 
   &:hover {
-    background-color: tint($accent-color, 20%);
+    background-color: tint(variables.$accent-color, 20%);
     color: #fff;
   }
 
   &:focus {
-    background-color: shade($accent-color, 20%);
+    background-color: shade(variables.$accent-color, 20%);
   }
 
   .icon {

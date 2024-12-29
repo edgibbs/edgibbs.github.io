@@ -1,3 +1,6 @@
+@use "basically-basic/variables";
+@use "basically-basic/vendor/breakpoint/breakpoint";
+
 /* ==========================================================================
    Alignment
    ========================================================================== */
@@ -53,10 +56,10 @@ a img.align-left {
    ========================================================================== */
 
 .is--pushed {
-  transform: translateX(1 * $sidebar-width);
+  transform: translateX(1 * variables.$sidebar-width);
   transform-origin: right;
 
-  @include breakpoint($large) {
-    transform: translateX(1.5 * $sidebar-width);
+  @include breakpoint.breakpoint(variables.$large) {
+    transform: translateX(1.5 * variables.$sidebar-width);
   }
 }

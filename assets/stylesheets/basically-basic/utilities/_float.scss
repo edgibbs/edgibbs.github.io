@@ -1,7 +1,9 @@
+@use "basically-basic/mixins/float";
+
 /* ==========================================================================
    Floats
    ========================================================================== */
 
-.float-left { @include float-left; }
-.float-right { @include float-right; }
-.float-none { @include float-none; }
+.float-left { @include float.float-left; }
+.float-right { @include float.float-right; }
+.float-none { @include float.float-none; }

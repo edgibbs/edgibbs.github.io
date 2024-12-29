@@ -1,3 +1,5 @@
+@use "basically-basic/variables";
+
 /* ==========================================================================
    Navicons
    ========================================================================== */
@@ -6,13 +8,13 @@
   display: inline-block;
   position: relative;
   padding: 0.90625rem 0;
-  min-height: $site-image-height;
-  -webkit-transition: calc($navicon-duration / 2);
-  transition: calc($navicon-duration / 2);
+  min-height: variables.$site-image-height;
+  -webkit-transition: calc(variables.$navicon-duration / 2);
+  transition: calc(variables.$navicon-duration / 2);
   border: 0;
   outline: none;
-  background-color: $navicon-nav-bg-close;
-  line-height: 5 * $navicon-height;
+  background-color: variables.$navicon-nav-bg-close;
+  line-height: 5 * variables.$navicon-height;
   cursor: pointer;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -20,61 +22,61 @@
   user-select: none;
 
   &.open {
-    background-color: $navicon-nav-bg-open;
+    background-color: variables.$navicon-nav-bg-open;
   }
 
   .navicon::before,
   .navicon::after {
-    -webkit-transition-duration: calc($navicon-duration / 2);
-    transition-duration: calc($navicon-duration / 2);
+    -webkit-transition-duration: calc(variables.$navicon-duration / 2);
+    transition-duration: calc(variables.$navicon-duration / 2);
   }
 
   &:hover {
-    -webkit-transition-duration: $navicon-duration;
-    transition-duration: $navicon-duration;
+    -webkit-transition-duration: variables.$navicon-duration;
+    transition-duration: variables.$navicon-duration;
 
     .navicon::before,
     .navicon::after {
-      -webkit-transition-duration: calc($navicon-duration / 2);
-      transition-duration: calc($navicon-duration / 2);
+      -webkit-transition-duration: calc(variables.$navicon-duration / 2);
+      transition-duration: calc(variables.$navicon-duration / 2);
     }
 
     .navicon::before {
-      top: (2.5 * $navicon-height);
+      top: (2.5 * variables.$navicon-height);
     }
     .navicon::after {
-      top: (-2.5 * $navicon-height);
+      top: (-2.5 * variables.$navicon-height);
     }
   }
 }
 
 .navicon {
   position: relative;
-  width: $navicon-width;
-  height: $navicon-height;
-  -webkit-transition-duration: $navicon-duration;
-  transition-duration: $navicon-duration;
-  border-radius: $navicon-width;
-  background: $navicon-content-bg;
+  width: variables.$navicon-width;
+  height: variables.$navicon-height;
+  -webkit-transition-duration: variables.$navicon-duration;
+  transition-duration: variables.$navicon-duration;
+  border-radius: variables.$navicon-width;
+  background: variables.$navicon-content-bg;
 
   &::before,
   &::after {
     display: block;
     position: absolute;
-    width: $navicon-width;
-    height: $navicon-height;
-    -webkit-transition-duration: $navicon-duration calc($navicon-duration / 2);
-    transition-duration: $navicon-duration calc($navicon-duration / 2);
-    border-radius: $navicon-width;
-    background: $navicon-content-bg;
+    width: variables.$navicon-width;
+    height: variables.$navicon-height;
+    -webkit-transition-duration: variables.$navicon-duration calc(variables.$navicon-duration / 2);
+    transition-duration: variables.$navicon-duration calc(variables.$navicon-duration / 2);
+    border-radius: variables.$navicon-width;
+    background: variables.$navicon-content-bg;
     content: "";
   }
 
   &::before {
-    top: (2 * $navicon-height);
+    top: (2 * variables.$navicon-height);
   }
   &::after {
-    top: (-2 * $navicon-height);
+    top: (-2 * variables.$navicon-height);
   }
 }
 
@@ -84,14 +86,14 @@
 }
 
 .open {
-  -webkit-transform: scale($navicon-toggled-size);
-  -ms-transform: scale($navicon-toggled-size);
-  transform: scale($navicon-toggled-size);
+  -webkit-transform: scale(variables.$navicon-toggled-size);
+  -ms-transform: scale(variables.$navicon-toggled-size);
+  transform: scale(variables.$navicon-toggled-size);
 
   .navicon::before,
   .navicon::after {
-    -webkit-transition-duration: $navicon-duration;
-    transition-duration: $navicon-duration;
+    -webkit-transition-duration: variables.$navicon-duration;
+    transition-duration: variables.$navicon-duration;
   }
 
   /* Arrows */
@@ -100,7 +102,7 @@
   &.uarr .navicon {
     &::before,
     &::after {
-      width: (0.6 * $navicon-width);
+      width: (0.6 * variables.$navicon-width);
     }
 
     &::before {
@@ -123,9 +125,9 @@
   }
 
   &.uarr {
-    -webkit-transform: scale($navicon-toggled-size) rotate(90deg);
-    -ms-transform: scale($navicon-toggled-size) rotate(90deg);
-    transform: scale($navicon-toggled-size) rotate(90deg);
+    -webkit-transform: scale(variables.$navicon-toggled-size) rotate(90deg);
+    -ms-transform: scale(variables.$navicon-toggled-size) rotate(90deg);
+    transform: scale(variables.$navicon-toggled-size) rotate(90deg);
   }
 
   &.rarr .navicon {

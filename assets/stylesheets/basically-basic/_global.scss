@@ -1,23 +1,27 @@
+@use "basically-basic/functions/fluid-type";
+@use "basically-basic/variables";
+@use "basically-basic/vendor/breakpoint/breakpoint";
+
 /* ==========================================================================
    Site-wide
    ========================================================================== */
 
 .site-title {
-  @include fluid-type($min-vw, $max-vw, 20px, 30px);
   margin: 0;
   padding: 1.8125rem 1rem;
   padding-right: calc(
-    10vw + (2 * #{$navicon-width})
+    10vw + (2 * #{variables.$navicon-width})
   ); /* make room for sidebar toggle */
-  font-family: $base-font-family;
+  font-family: variables.$base-font-family;
   font-weight: bold;
   line-height: 1;
+  @include fluid-type.fluid-type(variables.$min-vw, variables.$max-vw, 20px, 30px);
 
-  @include breakpoint($medium) {
+  @include breakpoint.breakpoint(variables.$medium) {
     padding-left: 2rem;
   }
 
-  @include breakpoint($large) {
+  @include breakpoint.breakpoint(variables.$large) {
     padding-left: 5vw;
   }
 
@@ -28,15 +32,15 @@
     -ms-flex-align: center;
     -webkit-box-align: center;
     align-items: center;
-    min-height: $site-image-height;
-    color: $text-color;
+    min-height: variables.$site-image-height;
+    color: variables.$text-color;
     text-decoration: none;
   }
 }
 
 .site-logo {
-  width: $site-image-width;
-  height: $site-image-height;
+  width: variables.$site-image-width;
+  height: variables.$site-image-height;
   margin-right: 0.5rem;
   border-radius: 50%;
 }

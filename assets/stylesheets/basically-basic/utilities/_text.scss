@@ -1,3 +1,5 @@
+@use "basically-basic/mixins/text-truncate";
+
 /* ==========================================================================
    Text
    ========================================================================== */
@@ -19,7 +21,7 @@
 .text-lowercase { text-transform: lowercase !important; }
 .text-uppercase { text-transform: uppercase !important; }
 .text-capitalize { text-transform: capitalize !important; }
-.text-truncate { @include text-truncate; }
+.text-truncate { @include text-truncate.text-truncate; }
 
 /*
    Sizing
