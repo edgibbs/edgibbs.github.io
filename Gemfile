@@ -8,3 +8,7 @@ group :jekyll_plugins do
   gem "jekyll-paginate"
   gem "jekyll-include-cache"
 end
+
+group :development do
+  gem "rspec", "~> 3.13"
+end
