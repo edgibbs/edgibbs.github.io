@@ -1,0 +1,66 @@
+# Publishes the site to GitHub Pages from a build artifact.
+#
+# Runs ALONGSIDE jekyll.yml on purpose. jekyll.yml keeps force-pushing the built
+# site to `master`, so that branch stays current and rollback is always to a
+# fresh site rather than a stale one. The duplicate build is the price of the
+# safety net. Once this has deployed cleanly a few times, delete jekyll.yml and
+# the master branch.
+#
+# This workflow only publishes once Pages is switched to Actions:
+#   gh api -X PUT repos/edgibbs/edgibbs.github.io/pages -f build_type=workflow
+#
+# Rollback to serving the master branch again, one command:
+#   gh api -X PUT repos/edgibbs/edgibbs.github.io/pages \
+#     -f build_type=legacy -f 'source[branch]=master' -f 'source[path]=/'
+
+name: Deploy Pages
+
+on:
+  push:
+    branches: [ development ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never cancel a deploy midway through publishing.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 4.0
+          bundler-cache: true
+
+      - name: Build site
+        run: JEKYLL_ENV=production bundle exec jekyll build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
