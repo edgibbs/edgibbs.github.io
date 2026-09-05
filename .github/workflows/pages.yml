@@ -1,17 +1,15 @@
 # Publishes the site to GitHub Pages from a build artifact.
 #
-# Runs ALONGSIDE jekyll.yml on purpose. jekyll.yml keeps force-pushing the built
-# site to `master`, so that branch stays current and rollback is always to a
-# fresh site rather than a stale one. The duplicate build is the price of the
-# safety net. Once this has deployed cleanly a few times, delete jekyll.yml and
-# the master branch.
+# This is the only deploy pipeline. Pages runs with build_type=workflow, so the
+# live site is whatever deployment this workflow last published. There is no
+# generated branch behind it.
 #
-# This workflow only publishes once Pages is switched to Actions:
-#   gh api -X PUT repos/edgibbs/edgibbs.github.io/pages -f build_type=workflow
+# The failure mode is mild: Pages deployments are immutable, so if a run fails
+# the previous deployment keeps serving. The site goes stale, not down.
 #
-# Rollback to serving the master branch again, one command:
-#   gh api -X PUT repos/edgibbs/edgibbs.github.io/pages \
-#     -f build_type=legacy -f 'source[branch]=master' -f 'source[path]=/'
+# There is no one-command rollback any more — the generated `master` branch was
+# deleted once this proved out. Falling back to branch-serving would mean
+# rebuilding that branch by hand first, then setting build_type=legacy.
 
 name: Deploy Pages
 
