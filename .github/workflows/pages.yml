@@ -15,7 +15,7 @@ name: Deploy Pages
 
 on:
   push:
-    branches: [ development ]
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
