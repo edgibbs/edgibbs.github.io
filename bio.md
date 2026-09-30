@@ -23,4 +23,8 @@ Oddest Facts:
   * Nevada High School Chess Champion in 1987.
   * Played paintball on the national circuit for several years.
 
+Podcast Appearances:
+
+  * [Inside the 3rd largest Rails monolith in the world with Cisco Tech Lead](https://tuple.app/distributed/inside-the-3rd-largest-rails-monolith-in-the-world-with-cisco-tech-lead) &#8211; Tuple&#8217;s Distributed podcast, July 2025. On engineering improvements, collaboration, and remote work practices at Cisco Meraki.
+
 Contact: ed at edgibbs dot com
